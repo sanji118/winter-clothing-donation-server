@@ -1,51 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Help Flood Victims in Sylhet",
-    "image": "https://i.postimg.cc/FKnpb622/houses-flood-illustration-buildings-deluge-water-flowing-street-33099-787.avif",
-    "description": "Provide emergency aid to families affected by severe flooding in Sylhet.",
-    "status": "Active",
-    "contactInfo": "contact@floodrelief.org, +8801711111111",
-    "division": "Sylhet"
-  },
-  {
-    "id": 2,
-    "title": "Cancer Treatment for Rahim",
-    "image": "https://i.postimg.cc/sgH7bhwW/world-cancer-day-poster-template-23-2151101192.avif",
-    "description": "Fundraising for Rahim's chemotherapy and medical expenses.",
-    "status": "Active",
-    "contactInfo": "help.rahim@gmail.com, +8801722222222",
-    "division": "Dhaka"
-  },
-  {
-    "id": 3,
-    "title": "Build a School in Rural Area",
-    "image": "https://i.postimg.cc/QMB1Ddyy/diverse-people-refugee-camps.jpg",
-    "description": "Help us construct a new school for underprivileged children in Kurigram.",
-    "status": "Planning",
-    "contactInfo": "edu.foundation@example.com, +8801733333333",
-    "division": "Rangpur"
-  },
-  {
-    "id": 4,
-    "title": "Animal Shelter Renovation",
-    "image": "https://i.postimg.cc/sgH7bhwW/rescue-dog-enjoying-being-pet-by-woman-shelter.jpg",
-    "description": "Renovate and expand our shelter for stray dogs and cats in Dhaka.",
-    "status": "Active",
-    "contactInfo": "paws.dhaka@gmail.com, +8801744444444",
-    "division": "Dhaka"
-  },
-  {
-    "id": 5,
-    "title": "Cyclone Aila Recovery Fund",
-    "image": "https://i.postimg.cc/FKnpb622/houses-flood-illustration-buildings-deluge-water-flowing-street-33099-787.avif",
-    "description": "Support long-term recovery efforts in communities affected by Cyclone Aila.",
-    "status": "Active",
-    "contactInfo": "info@ailarelief.org, +8801755555555",
-    "division": "Khulna"
-  },
-  {
-    "id": 6,
     "title": "Warm Coats for Dhaka's Streets",
     "image": "https://i.postimg.cc/pLsJx7Xp/flat-illustration-clothing-donation-concept-52683-55515.avif",
     "description": "A campaign to distribute warm coats and blankets to the homeless in Dhaka city.",
@@ -54,7 +8,6 @@
     "division": "Dhaka"
   },
   {
-    "id": 7,
     "title": "Bundle Joy for Sylhet Kids",
     "image": "https://i.postimg.cc/JhtchqGK/hand-drawn-clothing-donation-concept-52683-54811.avif",
     "description": "Collecting winter clothes and school sweaters for underprivileged children in Sylhet.",
@@ -63,7 +16,6 @@
     "division": "Sylhet"
   },
   {
-    "id": 8,
     "title": "Rajshahi Blanket Drive",
     "image": "https://i.postimg.cc/tgfdnx6b/hand-drawn-clothing-donation-landing-page-23-2148821740.avif",
     "description": "Distributing wool blankets to remote villages in Rajshahi during winter.",
@@ -72,16 +24,6 @@
     "division": "Rajshahi"
   },
   {
-    "id": 9,
-    "title": "Khulna Coat Distribution Camp",
-    "image": "https://i.postimg.cc/PrzMVJgb/realistic-scene-with-clothes-neighborhood-yard-sale-23-2151238290.avif",
-    "description": "Join us in warming lives in Khulna with jackets, shawls, and caps.",
-    "status": "Completed",
-    "contactInfo": "volunteer@khulnacare.org",
-    "division": "Khulna"
-  },
-  {
-    "id": 10,
     "title": "Cozy Drive for Rangpur Elderly",
     "image": "https://i.postimg.cc/tgfdnx6b/hand-drawn-clothing-donation-landing-page-23-2148821740.avif",
     "description": "Winter essentials for the elderly in northern Rangpur facing harsh winters.",
@@ -90,7 +32,6 @@
     "division": "Rangpur"
   },
   {
-    "id": 11,
     "title": "Mymensingh Winter Smiles",
     "image": "https://i.postimg.cc/pLsJx7Xp/flat-illustration-clothing-donation-concept-52683-55515.avif",
     "description": "A donation drive for school uniforms and warm clothing in Mymensingh.",
@@ -99,43 +40,6 @@
     "division": "Mymensingh"
   },
   {
-    "id": 12,
-    "title": "Barisal Blanket Express",
-    "image": "https://i.postimg.cc/htc2KTL3/elderly-men-are-exposed-rainwater-dry-weather-global-warming-1150-16273.avif",
-    "description": "Urgent campaign to send blankets and thermals to flood-prone Barisal.",
-    "status": "Completed",
-    "contactInfo": "barisal@warmmission.org",
-    "division": "Barisal"
-  },
-  {
-    "id": 13,
-    "title": "Chattogram Hills Winter Support",
-    "image": "https://i.postimg.cc/QMB1Ddyy/diverse-people-refugee-camps.jpg",
-    "description": "Helping tribal communities in Chattogram Hill Tracts prepare for winter.",
-    "status": "Upcoming",
-    "contactInfo": "support@chattogramaid.org",
-    "division": "Chattogram"
-  },
-  {
-    "id": 14,
-    "title": "Free Heart Surgery for Children",
-    "image": "https://i.postimg.cc/dtKB9rxt/hand-drawn-hospital-reception-scene-23-2148837407.avif",
-    "description": "Sponsor life-saving heart surgeries for underprivileged children.",
-    "status": "Ongoing",
-    "contactInfo": "heart.foundation@example.com, +8801766666666",
-    "division": "Dhaka"
-  },
-  {
-    "id": 15,
-    "title": "Digital Literacy for Rural Women",
-    "image": "https://i.postimg.cc/Hn0bNvhW/charity-concept-illustration-114360-24502.avif",
-    "description": "Provide tablets and training to empower women in rural communities.",
-    "status": "Planning",
-    "contactInfo": "women.tech@example.org, +8801777777777",
-    "division": "Rangpur"
-  },
-  {
-    "id": 16,
     "title": "Sylhet Family Winter Box",
     "image": "https://i.postimg.cc/50Y3s3Jj/close-up-volunteer-oganizing-stuff-donation-23-2149134484.avif",
     "description": "Winter survival boxes for rural families in Sylhet division.",
@@ -144,16 +48,6 @@
     "division": "Sylhet"
   },
   {
-    "id": 17,
-    "title": "Dhaka Urban Shelter Aid",
-    "image": "https://i.postimg.cc/htspvvM4/hopeless-refugee-refugee-camp-23-2151446302.avif",
-    "description": "Providing warm bedding to urban slum areas in Dhaka division.",
-    "status": "Completed",
-    "contactInfo": "admin@urbanwarmth.org",
-    "division": "Dhaka"
-  },
-  {
-    "id": 18,
     "title": "Northern Hope - Rajshahi Drive",
     "image": "https://i.postimg.cc/65wrZw88/hands-with-money-charity-donation-24877-54465.avif",
     "description": "Drive to gather shawls and gloves for women and children in Rajshahi.",
@@ -162,7 +56,6 @@
     "division": "Rajshahi"
   },
   {
-    "id": 19,
     "title": "Mymensingh Thermal Campaign",
     "image": "https://i.postimg.cc/JhtchqGK/hand-drawn-clothing-donation-concept-52683-54811.avif",
     "description": "Distributing thermals to factory workers in Mymensingh.",
@@ -171,34 +64,6 @@
     "division": "Mymensingh"
   },
   {
-    "id": 20,
-    "title": "Chattogram Port Worker Relief",
-    "image": "https://i.postimg.cc/K8GD6Fb6/hand-drawn-professional-emergency-team-23-2147944068.avif",
-    "description": "Campaign to deliver warm gear for night-shift port workers in Chattogram.",
-    "status": "Active",
-    "contactInfo": "warmgear@ctgrelief.org",
-    "division": "Chattogram"
-  },
-  {
-    "id": 21,
-    "title": "Save the Endangered Dolphins",
-    "image": "https://i.postimg.cc/wxN2J0FG/hospital-template-design-23-2150363203.avif",
-    "description": "Fund conservation efforts to protect river dolphins in the Sundarbans.",
-    "status": "Active",
-    "contactInfo": "sundarbans.wildlife@gmail.com, +8801788888888",
-    "division": "Khulna"
-  },
-  {
-    "id": 22,
-    "title": "Fire Victims Support Fund",
-    "image": "https://i.postimg.cc/c1f766Lq/international-firefighters-day-poster-1284-64485.avif",
-    "description": "Help families who lost their homes in the recent Mirpur slum fire.",
-    "status": "Urgent",
-    "contactInfo": "fire.relief@example.com, +8801799999999",
-    "division": "Dhaka"
-  },
-  {
-    "id": 23,
     "title": "Barisal Riverbank Aid",
     "image": "https://i.postimg.cc/htc2KTL3/elderly-men-are-exposed-rainwater-dry-weather-global-warming-1150-16273.avif",
     "description": "Distributing winter clothes to communities living near Barisal riverbanks.",
@@ -207,7 +72,6 @@
     "division": "Barisal"
   },
   {
-    "id": 24,
     "title": "Rangpur Rural Relief",
     "image": "https://i.postimg.cc/x8LP21c2/photorealistic-kid-refugee-camp-23-2151494299.avif",
     "description": "Warm clothing distribution in remote Rangpur villages.",
@@ -216,7 +80,6 @@
     "division": "Rangpur"
   },
   {
-    "id": 25,
     "title": "Sylhet Tea Garden Support",
     "image": "https://i.postimg.cc/50Y3s3Jj/close-up-volunteer-oganizing-stuff-donation-23-2149134484.avif",
     "description": "Coats and socks for workers in tea gardens around Sylhet.",
@@ -225,7 +88,6 @@
     "division": "Sylhet"
   },
   {
-    "id": 26,
     "title": "Rajshahi Night Shelter Aid",
     "image": "https://i.postimg.cc/htspvvM4/hopeless-refugee-refugee-camp-23-2151446302.avif",
     "description": "Night shelters with warm beds for the homeless in Rajshahi.",
@@ -234,8 +96,7 @@
     "division": "Rajshahi"
   },
   {
-    "id": 27,
-    "title": "Khulna Children’s Coat Drive",
+    "title": "Khulna Children's Coat Drive",
     "image": "https://i.postimg.cc/Prm6G2ww/first-aid-kit-concept-illustration-114360-6472.avif",
     "description": "Collecting winter wear for school children in Khulna suburbs.",
     "status": "Upcoming",
@@ -243,30 +104,11 @@
     "division": "Khulna"
   },
   {
-    "id": 28,
     "title": "Mymensingh Youth Volunteers Campaign",
     "image": "https://i.postimg.cc/Hn0bNvhW/charity-concept-illustration-114360-24502.avif",
     "description": "Youth-led initiative distributing winter gear door-to-door in Mymensingh.",
     "status": "Active",
     "contactInfo": "youth@mymvolunteers.org",
     "division": "Mymensingh"
-  },
-  {
-    "id": 29,
-    "title": "Cozy Nights in Dhaka",
-    "image": "https://i.postimg.cc/VvPjDP4H/world-cancer-day-poster-template-23-2151101192.avif",
-    "description": "Night-time winter aid drive across Dhaka's public spaces.",
-    "status": "Completed",
-    "contactInfo": "cozy@dhakarelief.org",
-    "division": "Dhaka"
-  },
-  {
-    "id": 30,
-    "title": "Mobile Medical Camp for Remote Areas",
-    "image": "https://i.postimg.cc/dtKB9rxt/hand-drawn-hospital-reception-scene-23-2148837407.avif",
-    "description": "Sponsor a mobile medical unit to provide healthcare in hard-to-reach areas.",
-    "status": "Active",
-    "contactInfo": "mobile.med@example.org, +8801800000000",
-    "division": "Rangpur"
   }
 ]
