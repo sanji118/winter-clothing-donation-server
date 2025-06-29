@@ -5,12 +5,33 @@ const donations = require('./donation.json');
 const volunteers = require('./volunteers.json');
 const app = express();
 const { MongoClient, ServerApiVersion } = require('mongodb');
+const { JsonWebTokenError } = require('jsonwebtoken');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.95qfhdq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 const port = 5000;
 
 
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:5173',
+  credentials: true,
+}));
 app.use(express.json());
+
+
+const logger = (req, res, next)=>{
+  console.log('inside the logger.');
+  next();
+}
+
+const verifyJWT = (req, res, next) =>{
+  const token = req.cookies?.token;
+  console.log("token recieved", token);
+  if(!token){
+    return res.send({message: 'Unauthorized No token'});
+    jwt.verify(token, process.env.JWT_SECRET, (err, decoded) =>{
+
+    })
+  }
+}
 
 const client = new MongoClient(uri, {
   serverApi: {
@@ -27,13 +48,6 @@ async function run() {
     const volunteerCollection = client.db('cozyKindness').collection('volunteers');
 
 
-    // Validate data before insertion
-    if (!Array.isArray(donations)) {
-      throw new Error('Donations data is not an array');
-    }
-    if (!Array.isArray(volunteers)) {
-      throw new Error('Volunteers data is not an array');
-    }
 
     const donationCount = await donationCollection.estimatedDocumentCount();
     if(donationCount === 0){
