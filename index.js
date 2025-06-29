@@ -1,11 +1,11 @@
 const express = require('express')
 const cors = require('cors');
+const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const donations = require('./donation.json');
 const volunteers = require('./volunteers.json');
 const app = express();
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const { JsonWebTokenError } = require('jsonwebtoken');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.95qfhdq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 const port = 5000;
 
@@ -26,10 +26,14 @@ const verifyJWT = (req, res, next) =>{
   const token = req.cookies?.token;
   console.log("token recieved", token);
   if(!token){
-    return res.send({message: 'Unauthorized No token'});
-    jwt.verify(token, process.env.JWT_SECRET, (err, decoded) =>{
-
-    })
+    return res.json({message: 'Unauthorized No token'});
+  }
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = decoded;
+    next();
+  } catch (error) {
+    res.json({message : 'Invalid token'})
   }
 }
 
@@ -61,6 +65,31 @@ async function run() {
     }
 
 
+
+
+    //auth related APIs
+    app.post('/jwt', async(req, res) =>{
+      const {email} = req.body;
+      if(!email) return res.send({success: false, message: 'Email is required.'});
+
+      const token = jwt.sign({userEmail: email}, process.env.JWT_SECRET, {expiresIn : '2d'})
+
+      res.cookie('token', token, {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
+        maxAge: 24 * 60 * 60 * 2 * 1000,
+        path: '/',
+      }).send({success : true, token});
+    });
+
+    app.post('/logout', (req, res) =>{
+      res.clearCookie('token', {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax'
+      }).send({success: true})
+    })
     // Donation related API
     app.get('/donations', async(req, res)=>{
         try {
