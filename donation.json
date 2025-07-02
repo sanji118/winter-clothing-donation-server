@@ -5,7 +5,12 @@
     "description": "A campaign to distribute warm coats and blankets to the homeless in Dhaka city.",
     "status": "Active",
     "contactInfo": "contact@warmheartsbd.org",
-    "division": "Dhaka"
+    "division": "Dhaka",
+    "raised": 42000,
+    "goal": 80000,
+    "itemsNeeded": 500,
+    "itemsCollected": 310,
+    "lastUpdated": "2025-07-01"
   },
   {
     "title": "Bundle Joy for Sylhet Kids",
@@ -13,7 +18,12 @@
     "description": "Collecting winter clothes and school sweaters for underprivileged children in Sylhet.",
     "status": "Active",
     "contactInfo": "sylhet@bundleoflove.org",
-    "division": "Sylhet"
+    "division": "Sylhet",
+    "raised": 30000,
+    "goal": 60000,
+    "itemsNeeded": 400,
+    "itemsCollected": 200,
+    "lastUpdated": "2025-07-01"
   },
   {
     "title": "Rajshahi Blanket Drive",
@@ -21,7 +31,12 @@
     "description": "Distributing wool blankets to remote villages in Rajshahi during winter.",
     "status": "Upcoming",
     "contactInfo": "info@rajshahicoldaid.org",
-    "division": "Rajshahi"
+    "division": "Rajshahi",
+    "raised": 10000,
+    "goal": 50000,
+    "itemsNeeded": 300,
+    "itemsCollected": 40,
+    "lastUpdated": "2025-06-29"
   },
   {
     "title": "Cozy Drive for Rangpur Elderly",
@@ -29,7 +44,12 @@
     "description": "Winter essentials for the elderly in northern Rangpur facing harsh winters.",
     "status": "Active",
     "contactInfo": "rangpur@frostrelief.org",
-    "division": "Rangpur"
+    "division": "Rangpur",
+    "raised": 28000,
+    "goal": 75000,
+    "itemsNeeded": 250,
+    "itemsCollected": 190,
+    "lastUpdated": "2025-07-01"
   },
   {
     "title": "Mymensingh Winter Smiles",
@@ -37,7 +57,12 @@
     "description": "A donation drive for school uniforms and warm clothing in Mymensingh.",
     "status": "Active",
     "contactInfo": "connect@wintersmiles.org",
-    "division": "Mymensingh"
+    "division": "Mymensingh",
+    "raised": 37000,
+    "goal": 70000,
+    "itemsNeeded": 450,
+    "itemsCollected": 280,
+    "lastUpdated": "2025-07-01"
   },
   {
     "title": "Sylhet Family Winter Box",
@@ -45,7 +70,12 @@
     "description": "Winter survival boxes for rural families in Sylhet division.",
     "status": "Active",
     "contactInfo": "outreach@wintersupply.org",
-    "division": "Sylhet"
+    "division": "Sylhet",
+    "raised": 40000,
+    "goal": 90000,
+    "itemsNeeded": 500,
+    "itemsCollected": 240,
+    "lastUpdated": "2025-07-01"
   },
   {
     "title": "Northern Hope - Rajshahi Drive",
@@ -53,7 +83,12 @@
     "description": "Drive to gather shawls and gloves for women and children in Rajshahi.",
     "status": "Active",
     "contactInfo": "help@northernhope.org",
-    "division": "Rajshahi"
+    "division": "Rajshahi",
+    "raised": 32000,
+    "goal": 65000,
+    "itemsNeeded": 350,
+    "itemsCollected": 190,
+    "lastUpdated": "2025-07-01"
   },
   {
     "title": "Mymensingh Thermal Campaign",
@@ -61,7 +96,12 @@
     "description": "Distributing thermals to factory workers in Mymensingh.",
     "status": "Upcoming",
     "contactInfo": "contact@clothingdrive.org",
-    "division": "Mymensingh"
+    "division": "Mymensingh",
+    "raised": 8000,
+    "goal": 40000,
+    "itemsNeeded": 200,
+    "itemsCollected": 30,
+    "lastUpdated": "2025-06-28"
   },
   {
     "title": "Barisal Riverbank Aid",
@@ -69,7 +109,12 @@
     "description": "Distributing winter clothes to communities living near Barisal riverbanks.",
     "status": "Upcoming",
     "contactInfo": "info@barisalcare.org",
-    "division": "Barisal"
+    "division": "Barisal",
+    "raised": 5000,
+    "goal": 30000,
+    "itemsNeeded": 150,
+    "itemsCollected": 15,
+    "lastUpdated": "2025-06-27"
   },
   {
     "title": "Rangpur Rural Relief",
@@ -77,7 +122,12 @@
     "description": "Warm clothing distribution in remote Rangpur villages.",
     "status": "Active",
     "contactInfo": "rural@rhelp.org",
-    "division": "Rangpur"
+    "division": "Rangpur",
+    "raised": 35000,
+    "goal": 75000,
+    "itemsNeeded": 400,
+    "itemsCollected": 210,
+    "lastUpdated": "2025-07-01"
   },
   {
     "title": "Sylhet Tea Garden Support",
@@ -85,7 +135,12 @@
     "description": "Coats and socks for workers in tea gardens around Sylhet.",
     "status": "Completed",
     "contactInfo": "sylhet@teagardenhelp.org",
-    "division": "Sylhet"
+    "division": "Sylhet",
+    "raised": 60000,
+    "goal": 60000,
+    "itemsNeeded": 300,
+    "itemsCollected": 300,
+    "lastUpdated": "2025-06-20"
   },
   {
     "title": "Rajshahi Night Shelter Aid",
@@ -93,7 +148,12 @@
     "description": "Night shelters with warm beds for the homeless in Rajshahi.",
     "status": "Active",
     "contactInfo": "support@rajshahishelter.org",
-    "division": "Rajshahi"
+    "division": "Rajshahi",
+    "raised": 45000,
+    "goal": 90000,
+    "itemsNeeded": 250,
+    "itemsCollected": 150,
+    "lastUpdated": "2025-07-01"
   },
   {
     "title": "Khulna Children's Coat Drive",
@@ -101,7 +161,12 @@
     "description": "Collecting winter wear for school children in Khulna suburbs.",
     "status": "Upcoming",
     "contactInfo": "khulna@warmupkids.org",
-    "division": "Khulna"
+    "division": "Khulna",
+    "raised": 6000,
+    "goal": 40000,
+    "itemsNeeded": 200,
+    "itemsCollected": 20,
+    "lastUpdated": "2025-06-29"
   },
   {
     "title": "Mymensingh Youth Volunteers Campaign",
@@ -109,6 +174,11 @@
     "description": "Youth-led initiative distributing winter gear door-to-door in Mymensingh.",
     "status": "Active",
     "contactInfo": "youth@mymvolunteers.org",
-    "division": "Mymensingh"
+    "division": "Mymensingh",
+    "raised": 30000,
+    "goal": 70000,
+    "itemsNeeded": 350,
+    "itemsCollected": 180,
+    "lastUpdated": "2025-07-01"
   }
 ]
