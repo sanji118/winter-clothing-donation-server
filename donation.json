@@ -32,10 +32,10 @@
     "status": "Upcoming",
     "contactInfo": "info@rajshahicoldaid.org",
     "division": "Rajshahi",
-    "raised": 10000,
+    "raised": 0,
     "goal": 50000,
     "itemsNeeded": 300,
-    "itemsCollected": 40,
+    "itemsCollected": 0,
     "lastUpdated": "2025-06-29"
   },
   {
@@ -97,10 +97,10 @@
     "status": "Upcoming",
     "contactInfo": "contact@clothingdrive.org",
     "division": "Mymensingh",
-    "raised": 8000,
+    "raised": 0,
     "goal": 40000,
     "itemsNeeded": 200,
-    "itemsCollected": 30,
+    "itemsCollected": 0,
     "lastUpdated": "2025-06-28"
   },
   {
@@ -110,10 +110,10 @@
     "status": "Upcoming",
     "contactInfo": "info@barisalcare.org",
     "division": "Barisal",
-    "raised": 5000,
+    "raised": 0,
     "goal": 30000,
     "itemsNeeded": 150,
-    "itemsCollected": 15,
+    "itemsCollected": 0,
     "lastUpdated": "2025-06-27"
   },
   {
@@ -162,10 +162,10 @@
     "status": "Upcoming",
     "contactInfo": "khulna@warmupkids.org",
     "division": "Khulna",
-    "raised": 6000,
+    "raised": 0,
     "goal": 40000,
     "itemsNeeded": 200,
-    "itemsCollected": 20,
+    "itemsCollected": 0,
     "lastUpdated": "2025-06-29"
   },
   {

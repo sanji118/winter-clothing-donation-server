@@ -1,11 +1,11 @@
-const express = require('express')
+const express = require('express');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const donations = require('./donation.json');
 const volunteers = require('./volunteers.json');
 const app = express();
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.95qfhdq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 const port = 5000;
 
@@ -99,6 +99,16 @@ async function run() {
             res.status(500).send({error});
         }
     })
+    app.get('/donations/:id', async (req, res) =>{
+      try {
+        const id = req.params.id;
+        const query = {_id : new ObjectId(id)}
+        const result = await donationCollection.findOne(query);
+        res.json(result);
+      } catch (error) {
+        res.send({error});
+      }
+    })
 
 
     // Volunteers related API
@@ -108,6 +118,16 @@ async function run() {
         res.send(result);
       }catch (error){
         res.status(500).send({error});
+      }
+    })
+    app.get('/volunteers/:id', async (req, res) =>{
+      try {
+        const id = req.params.id;
+        const query = {_id : new ObjectId(id)}
+        const result = await volunteerCollection.findOne(query);
+        res.json(result);
+      } catch (error) {
+        res.send({error});
       }
     })
   } finally {
