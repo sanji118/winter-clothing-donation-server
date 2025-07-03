@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Brandon Dixon",
+    "role": "Founder, WarmHearts",
+    "rating": 5.0,
+    "quote": "Thanks to this platform, we were able to collect and distribute hundreds of winter jackets to street children in Dhaka. Every donation brought real warmth to someone's life.",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    "name": "Sarah Ahmed",
+    "role": "Community Volunteer",
+    "rating": 4.9,
+    "quote": "Seeing the smiles on the faces of children receiving warm clothes is something I'll never forget. This charity makes it easy for everyone to give back in the coldest months.",
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    "name": "Rahim Uddin",
+    "role": "Donor",
+    "rating": 5.0,
+    "quote": "I donated my family's unused sweaters, and within days they reached families in need. The process was simple, transparent, and truly impactful.",
+    "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    "name": "Nasima Khatun",
+    "role": "Mother & Beneficiary",
+    "rating": 4.8,
+    "quote": "Last winter, we had no blankets. This year, thanks to your donations, my children sleep warm. May you be blessed for your kindness.",
+    "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    "name": "Hasan Mahmud",
+    "role": "High School Student",
+    "rating": 4.7,
+    "quote": "I used to skip school in winter because I had no warm clothes. This year, I got a coat and a pair of shoes — and I haven't missed a day.",
+    "image": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    "name": "Ayesha Rahman",
+    "role": "Local Organizer",
+    "rating": 5.0,
+    "quote": "Organizing local donation drives was easier with this site. Within a week, we collected over 200 winter items and reached 3 villages.",
+    "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    "name": "Jahidul Islam",
+    "role": "College Volunteer",
+    "rating": 4.9,
+    "quote": "Volunteering during winter distributions opened my eyes. The gratitude we receive from those in need is worth every effort.",
+    "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=80"
+  },
+  {
+    "name": "Emma Wilson",
+    "role": "Education Coordinator",
+    "rating": 4.8,
+    "quote": "The educational materials we distributed along with winter clothes helped children continue learning even in harsh weather.",
+    "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&auto=format&fit=crop&q=80"
+  }
+]

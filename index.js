@@ -4,6 +4,7 @@ const jwt = require('jsonwebtoken');
 require('dotenv').config();
 const donations = require('./donation.json');
 const volunteers = require('./volunteers.json');
+const testimonials = require('./testimonials.json');
 const app = express();
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.95qfhdq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
@@ -50,6 +51,7 @@ async function run() {
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
     const donationCollection = client.db('cozyKindness').collection('donations');
     const volunteerCollection = client.db('cozyKindness').collection('volunteers');
+    const testimonialCollection = client.db('cozyKindness').collection('testimonials');
 
 
 
@@ -63,7 +65,11 @@ async function run() {
       await volunteerCollection.insertMany(volunteers);
       console.log('volunteers seeded')
     }
-
+    const testimonialCount = await testimonialCollection.estimatedDocumentCount();
+    if(testimonialCount === 0){
+      await testimonialCollection.insertMany(testimonials);
+      console.log('Testimonials seeded.')
+    }
 
 
 
@@ -130,6 +136,13 @@ async function run() {
         res.send({error});
       }
     })
+
+    // Testimonial related APIs
+    app.get('/testimonals', async(req, res) =>{
+      const result = await testimonialCollection.find().toArray();
+      res.send(result);
+    })
+    
   } finally {
     // Ensures that the client will close when you finish/error
     //await client.close();
