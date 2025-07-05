@@ -17,10 +17,11 @@ const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster
 const client = new MongoClient(uri);
 let db;
 
-async function connectDB(callback) {
+async function connectDB() {
     try {
         await client.connect();
         db = client.db('cozyKindness');
+        console.log('MongoDB connected')
         const collections = [
             {name: 'campaigns', data: campaigns},
             {name: 'volunteers', data: volunteers},
@@ -44,14 +45,15 @@ async function connectDB(callback) {
             }
         }
 
-
-        callback();
     } catch (error) {
         console.log(error);
     }
 }
 
 function getCollection(name){
+    if(!db){
+        throw new Error('call connectDB first')
+    }
     return db.collection(name);
 }
 

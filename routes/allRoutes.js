@@ -9,13 +9,14 @@ const teamRoutes = require('./teamRoutes');
 const galleryRoutes = require('./galleryRoutes');
 const faqRoutes = require('./faqRoutes');
 const userRoutes = require('./userRoutes');
+const authRoutes = require('./authRoutes');
 
 
 
 const router = express.Router();
 
 
-
+router.use(authRoutes)
 router.use('/campaigns', campaignRoutes);
 router.use('/volunteers', volunteerRoutes);
 router.use('/testimonials', testimonialRoutes);
