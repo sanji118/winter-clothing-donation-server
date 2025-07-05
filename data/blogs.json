@@ -1,44 +1,241 @@
 [
   {
-    "title": "How Winter Affects Bangladesh's Ultra-Poor",
-    "image": "https://i.postimg.cc/htc2KTL3/winter-impact-bangladesh.jpg",
-    "author": "Dr. Rezwan Ahmed",
-    "content": "Winter in Bangladesh brings unique challenges... [full article content]",
-    "date": "2025-05-10"
+    "title": "How Your Winter Donations Save Lives",
+    "slug": "how-winter-donations-save-lives",
+    "author": {
+      "name": "Amina Khan",
+      "avatar": "/images/authors/amina.jpg",
+      "bio": "Social worker with 10 years experience in winter relief programs",
+      "social": {
+        "twitter": "@AminaWinterCare",
+        "facebook": "AminaWinterRelief"
+      }
+    },
+    "date": "2023-11-15T08:00:00Z",
+    "image": "https://i.postimg.cc/rpVFn1RP/2023-impact-report.jpg",
+    "content": "Every winter in Bangladesh, countless individuals—especially children and the elderly—face harsh temperatures without adequate protection. Your donated sweaters, jackets, and blankets serve as more than just clothing; they are literal lifelines. These items reduce the risk of pneumonia, hypothermia, and other cold-related illnesses. In remote areas where access to healthcare is limited, prevention is key—and your donations provide just that. Through coordinated efforts with volunteers and local leaders, we ensure your contributions reach those who need them most, turning your compassion into life-saving support.",
+    "excerpt": "Learn how your donated sweaters and blankets make a direct impact on vulnerable communities.",
+    "categories": ["Impact Stories"],
+    "tags": ["winter", "health", "community"],
+    "comments": [],
+    "views": 1245,
+    "likes": 89,
+    "updatedDate": "2023-11-20T10:30:00Z",
+    "readingTime": 4,
+    "featured": true,
+    "metaDescription": "Discover the life-saving impact of winter clothing donations in Bangladesh's coldest regions"
   },
   {
-    "title": "5 Ways Your Donation Makes Impact",
-    "image": "https://i.postimg.cc/pLsJx7Xp/flat-illustration-clothing-donation-concept.jpg",
-    "author": "Fatima Khan",
-    "content": "Every donated item goes through a careful process... [full article content]",
-    "date": "2025-06-15"
+    "title": "Essential Winter Items We Need This Season",
+    "slug": "essential-winter-items",
+    "author": {
+      "name": "Rahim Ahmed",
+      "avatar": "/images/authors/rahim.jpg",
+      "bio": "Logistics coordinator for winter relief efforts",
+      "social": {
+        "twitter": "@RahimWarmHands"
+      }
+    },
+    "date": "2023-11-10T09:15:00Z",
+    "image": "https://i.postimg.cc/W1P4rLNj/pile-of-donated-winter-clothing-ready-for-distribution.jpg",
+    "content": "The needs of vulnerable communities are clear: they require specific items that provide warmth, comfort, and dignity. Top-requested donations include woolen sweaters, thermal undergarments, shawls, children's coats, warm socks, and blankets. Baby clothing and sleeping bags are also in high demand, especially in colder northern regions. Additionally, we seek items in good condition that are clean and ready for use. Your support helps us maintain a consistent inventory of winter essentials, ensuring families aren’t left behind when the temperatures drop.",
+    "excerpt": "A complete list of winter clothing items that are in highest demand",
+    "categories": ["Donation Guide"],
+    "tags": ["clothing", "essentials", "list"],
+    "comments": [],
+    "views": 982,
+    "likes": 45,
+    "readingTime": 3,
+    "featured": false,
+    "metaDescription": "See which winter clothing items are most needed for our donation drive this year"
   },
   {
-    "title": "Volunteer Spotlight: Meet Our Field Team",
-    "image": "https://i.postimg.cc/50Y3s3Jj/close-up-volunteer-oganizing-stuff.jpg",
-    "author": "Admin User",
-    "content": "Behind every successful distribution are dedicated volunteers... [full article content]",
-    "date": "2025-06-25"
+    "title": "Volunteer Spotlight: Delivering Warmth to Remote Villages",
+    "slug": "volunteer-spotlight",
+    "author": {
+      "name": "Winter Donation Team",
+      "avatar": "/images/authors/team-logo.jpg",
+      "bio": "Official account of the Winter Donation initiative"
+    },
+    "date": "2023-11-05T07:00:00Z",
+    "image": "https://i.postimg.cc/ZRgb5X7G/community-volunteers-sorting-winter-clothing-donations.jpg",
+    "content": "Meet Jamil, one of our most dedicated volunteers. His journey starts before dawn, loading trucks with sorted winter donations. He travels to remote northern villages where paved roads end and community access requires hours of travel. Upon arrival, he works with local organizers to ensure fair distribution—giving priority to elderly residents, children, and those with disabilities. His story is one of many that highlight the human effort behind each donated item. Thanks to volunteers like Jamil, your generosity reaches the most isolated communities in Bangladesh.",
+    "excerpt": "A day in the life of our dedicated volunteer network",
+    "categories": ["Volunteer Stories"],
+    "tags": ["volunteer", "distribution", "fieldwork"],
+    "comments": [],
+    "views": 756,
+    "likes": 67,
+    "readingTime": 5,
+    "featured": true,
+    "metaDescription": "See how volunteers distribute winter clothing to remote areas of Bangladesh"
   },
   {
-    "title": "Winter Preparedness Guide for Rural Families",
-    "image": "https://i.postimg.cc/x8LP21c2/photorealistic-kid-refugee-camp.jpg",
-    "author": "Priya Saha",
-    "content": "Simple techniques to stay warm without electricity... [full article content]",
-    "date": "2025-05-30"
+    "title": "How to Organize a Community Donation Drive",
+    "slug": "community-donation-drive",
+    "author": {
+      "name": "Farhana Begum",
+      "avatar": "/images/authors/farhana.jpg",
+      "bio": "Community organizer for winter relief programs"
+    },
+    "date": "2023-10-28T10:30:00Z",
+    "image": "https://i.postimg.cc/DZmfF7gQ/Corporate-Donations.png",
+    "content": "Organizing a successful donation drive begins with clear planning. First, identify a central location—schools, mosques, or community centers work well. Promote your drive through posters, social media, and local leaders. Provide a list of needed items and establish collection times. Next, set up volunteers to sort and package donations. Partner with logistics teams or our distribution network to ensure safe delivery. A well-run drive doesn't just collect clothing—it unites communities around a shared purpose of compassion and care.",
+    "excerpt": "Start your own local initiative with these practical tips",
+    "categories": ["Get Involved"],
+    "tags": ["community", "organizing", "guide"],
+    "comments": [],
+    "views": 1123,
+    "likes": 92,
+    "readingTime": 6,
+    "featured": false,
+    "metaDescription": "Learn how to organize a successful winter clothing donation drive in your community"
   },
   {
-    "title": "Corporate Partnerships That Changed Lives",
-    "image": "https://i.postimg.cc/htspvvM4/hopeless-refugee-refugee-camp.jpg",
-    "author": "Admin User",
-    "content": "How local businesses amplified our impact... [full article content]",
-    "date": "2025-06-20"
+    "title": "The Science of Staying Warm: Best Fabrics for Winter",
+    "slug": "winter-fabrics-guide",
+    "author": {
+      "name": "Dr. Tasnim Hasan",
+      "avatar": "/images/authors/tasnim.jpg",
+      "bio": "Textile scientist specializing in thermal properties"
+    },
+    "date": "2023-10-20T11:00:00Z",
+    "image": "https://i.postimg.cc/28W6V8f2/cleaning-donated-clothing.png",
+    "content": "Warmth begins with the right materials. Wool is highly effective due to its insulating fibers and moisture-wicking properties. Fleece, while synthetic, traps heat efficiently and dries quickly, making it ideal for outerwear. Down feathers provide excellent insulation but require care to ensure longevity. Cotton, though common, should be avoided in extreme cold as it retains moisture. When donating, prioritize thick, layered fabrics that retain body heat and allow breathability. Your informed choices can mean the difference between comfort and cold for someone in need.",
+    "excerpt": "Textile expert explains which materials provide the best insulation",
+    "categories": ["Donation Guide"],
+    "tags": ["materials", "science", "quality"],
+    "comments": [],
+    "views": 843,
+    "likes": 56,
+    "readingTime": 7,
+    "featured": false,
+    "metaDescription": "Textile scientist explains which fabrics provide the best warmth for winter donations"
   },
   {
-    "title": "From Donor to Beneficiary: A Full Circle Story",
-    "image": "https://i.postimg.cc/JhtchqGK/hand-drawn-clothing-donation-concept.jpg",
-    "author": "Rahim Uddin",
-    "content": "How a past recipient became a regular donor... [full article content]",
-    "date": "2025-07-01"
+    "title": "Our 2023 Impact Report: By the Numbers",
+    "slug": "2023-impact-report",
+    "author": {
+      "name": "Winter Donation Team",
+      "avatar": "/images/authors/team-logo.jpg",
+      "bio": "Official account of the Winter Donation initiative"
+    },
+    "date": "2023-10-15T09:00:00Z",
+    "image": "https://i.postimg.cc/rpVFn1RP/2023-impact-report.jpg",
+    "content": "This year, we successfully delivered over 12,000 winter items to 45 different communities across Bangladesh. Our network of 300+ volunteers helped coordinate transportation, distribution, and on-the-ground logistics. These efforts resulted in a 30% increase in total reach compared to the previous year. The most impacted regions included Dinajpur, Nilphamari, and Kurigram, where temperatures are especially harsh. We also partnered with 12 organizations to host collection drives. These numbers reflect not just scale but deep impact—each item representing a person kept warm through your generosity.",
+    "excerpt": "See the measurable difference your donations made last winter",
+    "categories": ["Impact Stories"],
+    "tags": ["statistics", "results", "achievements"],
+    "comments": [],
+    "views": 1342,
+    "likes": 104,
+    "readingTime": 4,
+    "featured": true,
+    "metaDescription": "Key statistics showing the impact of last year's winter clothing donations"
+  },
+  {
+    "title": "Cleaning and Preparing Donated Clothing: A Complete Guide",
+    "slug": "preparing-donations",
+    "author": {
+      "name": "Nusrat Jahan",
+      "avatar": "/images/authors/nusrat.jpg",
+      "bio": "Quality control supervisor for donation center"
+    },
+    "date": "2023-10-10T08:45:00Z",
+    "image": "https://i.postimg.cc/28W6V8f2/cleaning-donated-clothing.png",
+    "content": "Before sending your donated clothing, make sure they are clean, odor-free, and folded neatly. Use mild detergent to avoid skin irritation. Inspect for damage like holes or broken zippers—only donate items in usable condition. Once cleaned, sort by type: coats, sweaters, socks, children’s clothing. Label boxes clearly and package them to prevent moisture damage during transport. Your preparation ensures that distribution teams can deliver items efficiently and with dignity, saving crucial time in the field.",
+    "excerpt": "Simple steps to make your winter donations ready for distribution",
+    "categories": ["Donation Guide"],
+    "tags": ["preparation", "cleaning", "quality"],
+    "comments": [],
+    "views": 921,
+    "likes": 78,
+    "readingTime": 5,
+    "featured": false,
+    "metaDescription": "Step-by-step instructions for properly cleaning and preparing winter clothing donations"
+  },
+  {
+    "title": "Stories from the Field: A Grandmother's Gratitude",
+    "slug": "field-stories-grandmother",
+    "author": {
+      "name": "Imran Hossain",
+      "avatar": "/images/authors/imran.jpg",
+      "bio": "Field reporter documenting donation distributions"
+    },
+    "date": "2023-10-05T07:30:00Z",
+    "image": "https://i.postimg.cc/W1P4rLNj/Grandmother-s-Gratitude.png",
+    "content": "Fatema, a 72-year-old woman from Thakurgaon, received a woolen shawl from our winter relief team. With tears in her eyes, she shared how she had been sleeping in a corner of her tin-roofed home with nothing but a worn-out sari to shield her from the cold. Her story is one of many that illustrate the deep emotional and physical impact your donations have. For recipients, it's not just about staying warm—it's about knowing someone out there cares.",
+    "excerpt": "Heartwarming accounts from recipients of your donations",
+    "categories": ["Impact Stories"],
+    "tags": ["personal", "stories", "recipients"],
+    "comments": [],
+    "views": 1567,
+    "likes": 132,
+    "readingTime": 6,
+    "featured": true,
+    "metaDescription": "Touching stories from elderly recipients of winter clothing donations"
+  },
+  {
+    "title": "Corporate Donations: How Businesses Can Help",
+    "slug": "corporate-donations",
+    "author": {
+      "name": "Sabrina Chowdhury",
+      "avatar": "/images/authors/sabrina.jpg",
+      "bio": "Corporate partnerships manager"
+    },
+    "date": "2023-09-28T10:00:00Z",
+    "image": "https://i.postimg.cc/DZmfF7gQ/Corporate-Donations.png",
+    "content": "Businesses have powerful tools to support winter relief: bulk donations, employee drives, logistics, and sponsorships. Partnering with us allows you to amplify your social impact and meet CSR goals. Companies can host in-office collection bins, match employee contributions, or sponsor full distribution routes. Beyond materials, technical support like vehicles or warehouse space is invaluable. Your company’s involvement strengthens our operations and demonstrates that corporate responsibility can warm lives.",
+    "excerpt": "Ways companies and organizations can contribute to keeping people warm",
+    "categories": ["Get Involved"],
+    "tags": ["business", "corporate", "sponsorship"],
+    "comments": [],
+    "views": 672,
+    "likes": 34,
+    "readingTime": 5,
+    "featured": false,
+    "metaDescription": "Guide for businesses wanting to support winter clothing donation initiatives"
+  },
+  {
+    "title": "Winter in Bangladesh: Climate Challenges Explained",
+    "slug": "winter-in-bangladesh",
+    "author": {
+      "name": "Dr. Arif Rahman",
+      "avatar": "/images/authors/arif.jpg",
+      "bio": "Climate researcher at Dhaka University"
+    },
+    "date": "2023-09-20T11:20:00Z",
+    "image": "https://i.postimg.cc/dVmVjH3C/winter-in-bd.png",
+    "content": "Despite its tropical reputation, Bangladesh’s northern districts experience intense cold from December through February. Temperatures often drop below 10°C, especially in areas like Panchagarh and Nilphamari. Many families lack access to heating, insulated homes, or appropriate clothing. These weather conditions disproportionately affect infants, elderly individuals, and those with health conditions. Understanding these regional climate challenges helps shape effective donation strategies and ensures timely response during seasonal crises.",
+    "excerpt": "Understanding the unique winter challenges in different regions",
+    "categories": ["Education"],
+    "tags": ["climate", "regions", "weather"],
+    "comments": [],
+    "views": 789,
+    "likes": 43,
+    "readingTime": 8,
+    "featured": false,
+    "metaDescription": "Climate expert explains winter conditions across Bangladesh and their impacts"
+  },
+  {
+    "title": "Upcoming Distribution Schedule: Where Your Donations Are Going",
+    "slug": "distribution-schedule",
+    "author": {
+      "name": "Winter Donation Team",
+      "avatar": "/images/authors/team-logo.jpg",
+      "bio": "Official account of the Winter Donation initiative"
+    },
+    "date": "2023-09-15T08:15:00Z",
+    "image": "https://i.postimg.cc/3wtrPkgJ/Distribution-Schedule.png",
+    "content": "This winter, our distribution network will cover 18 districts across Bangladesh. Starting November 20, trucks will depart weekly to areas including Rajshahi, Lalmonirhat, and Rangpur. Each route is coordinated with local volunteers and NGOs to ensure items reach the right people quickly. We’ll prioritize flood-affected zones and regions with high poverty rates. For transparency, real-time updates and photos from the field will be posted on our website. Your support fuels every leg of this journey.",
+    "excerpt": "Transparent look at how and where donations will be distributed",
+    "categories": ["Updates"],
+    "tags": ["schedule", "locations", "transparency"],
+    "comments": [],
+    "views": 1034,
+    "likes": 87,
+    "readingTime": 3,
+    "featured": true,
+    "metaDescription": "View the planned distribution schedule for winter clothing donations across Bangladesh"
   }
 ]

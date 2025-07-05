@@ -1,3 +1,5 @@
+const { getCollection } = require("../utils/connectDB");
+
 exports.getFaqs = async (req, res) => {
   const collection = getCollection('faq');
   const data = await collection.find().toArray();
