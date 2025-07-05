@@ -1,0 +1,50 @@
+[
+  {
+    "userId": "donor@email.com",
+    "campaignId": "Winter Blankets for Rangpur",
+    "amount": 5000,
+    "date": "2025-06-18",
+    "method": "bkash",
+    "transactionId": "BKA789XYZ456"
+  },
+  {
+    "userId": "partner@example.org",
+    "campaignId": "Coats for Dhaka Street Children",
+    "amount": 20000,
+    "date": "2025-06-20",
+    "method": "bank",
+    "transactionId": "BNK123ABC789"
+  },
+  {
+    "userId": "anonymous",
+    "campaignId": "Sylhet Tea Garden Workers",
+    "amount": 1000,
+    "date": "2025-06-15",
+    "method": "nagad",
+    "transactionId": "NGD456DEF123"
+  },
+  {
+    "userId": "fatima@email.com",
+    "campaignId": "Rajshahi Elderly Care",
+    "amount": 3000,
+    "date": "2025-06-25",
+    "method": "bkash",
+    "transactionId": "BKA111YYY222"
+  },
+  {
+    "userId": "arif@email.com",
+    "campaignId": "Chittagong Hill Tracts",
+    "amount": 2500,
+    "date": "2025-06-28",
+    "method": "card",
+    "transactionId": "CRD333ZZZ444"
+  },
+  {
+    "userId": "priya@email.com",
+    "campaignId": "Khulna Fishermen Relief",
+    "amount": 7000,
+    "date": "2025-07-01",
+    "method": "nagad",
+    "transactionId": "NGD555XXX666"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "title": "Warm Coats for Dhaka's Streets",
+    "image": "https://i.postimg.cc/pLsJx7Xp/flat-illustration-clothing-donation-concept-52683-55515.avif",
+    "description": "A campaign to distribute warm coats and blankets to the homeless in Dhaka city.",
+    "status": "Active",
+    "contactInfo": "contact@warmheartsbd.org",
+    "division": "Dhaka",
+    "location": {
+      "lat": 23.8103,
+      "lng": 90.4125,
+      "address": "Dhaka City Center"
+    },
+    "raised": 42000,
+    "goal": 80000,
+    "itemsNeeded": 500,
+    "itemsCollected": 310,
+    "startDate": "2025-06-01",
+    "endDate": "2025-12-31",
+    "lastUpdated": "2025-07-01",
+    "createdBy": "admin@warmhearts.org",
+    "volunteersNeeded": 8
+  },
+  {
+    "title": "Bundle Joy for Sylhet Kids",
+    "image": "https://i.postimg.cc/JhtchqGK/hand-drawn-clothing-donation-concept-52683-54811.avif",
+    "description": "Collecting winter clothes and school sweaters for underprivileged children in Sylhet.",
+    "status": "Active",
+    "contactInfo": "sylhet@bundleoflove.org",
+    "division": "Sylhet",
+    "location": {
+      "lat": 24.9045,
+      "lng": 91.8611,
+      "address": "Sylhet City Center"
+    },
+    "raised": 30000,
+    "goal": 60000,
+    "itemsNeeded": 400,
+    "itemsCollected": 200,
+    "startDate": "2025-06-15",
+    "endDate": "2025-12-15",
+    "lastUpdated": "2025-07-01",
+    "createdBy": "sylhet-coordinator@warmhearts.org",
+    "volunteersNeeded": 5
+  },
+  {
+    "title": "Rajshahi Blanket Drive",
+    "image": "https://i.postimg.cc/tgfdnx6b/hand-drawn-clothing-donation-landing-page-23-2148821740.avif",
+    "description": "Distributing wool blankets to remote villages in Rajshahi during winter.",
+    "status": "Upcoming",
+    "contactInfo": "info@rajshahicoldaid.org",
+    "division": "Rajshahi",
+    "location": {
+      "lat": 24.3745,
+      "lng": 88.6042,
+      "address": "Rajshahi District"
+    },
+    "raised": 0,
+    "goal": 50000,
+    "itemsNeeded": 300,
+    "itemsCollected": 0,
+    "startDate": "2025-11-01",
+    "endDate": "2026-01-31",
+    "lastUpdated": "2025-06-29",
+    "createdBy": "rajshahi-coordinator@warmhearts.org",
+    "volunteersNeeded": 10
+  },
+  {
+    "title": "Cozy Drive for Rangpur Elderly",
+    "image": "https://i.postimg.cc/tgfdnx6b/hand-drawn-clothing-donation-landing-page-23-2148821740.avif",
+    "description": "Winter essentials for the elderly in northern Rangpur facing harsh winters.",
+    "status": "Active",
+    "contactInfo": "rangpur@frostrelief.org",
+    "division": "Rangpur",
+    "location": {
+      "lat": 25.7439,
+      "lng": 89.2752,
+      "address": "Rangpur District"
+    },
+    "raised": 28000,
+    "goal": 75000,
+    "itemsNeeded": 250,
+    "itemsCollected": 190,
+    "startDate": "2025-06-20",
+    "endDate": "2025-12-20",
+    "lastUpdated": "2025-07-01",
+    "createdBy": "rangpur-coordinator@warmhearts.org",
+    "volunteersNeeded": 6
+  },
+  {
+    "title": "Mymensingh Winter Smiles",
+    "image": "https://i.postimg.cc/pLsJx7Xp/flat-illustration-clothing-donation-concept-52683-55515.avif",
+    "description": "A donation drive for school uniforms and warm clothing in Mymensingh.",
+    "status": "Active",
+    "contactInfo": "connect@wintersmiles.org",
+    "division": "Mymensingh",
+    "location": {
+      "lat": 24.7471,
+      "lng": 90.4203,
+      "address": "Mymensingh City"
+    },
+    "raised": 37000,
+    "goal": 70000,
+    "itemsNeeded": 450,
+    "itemsCollected": 280,
+    "startDate": "2025-06-10",
+    "endDate": "2025-12-10",
+    "lastUpdated": "2025-07-01",
+    "createdBy": "mymensingh-coordinator@warmhearts.org",
+    "volunteersNeeded": 7
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Admin User",
+    "email": "admin@warmhearts.org",
+    "photo": "https://i.postimg.cc/8C4XbZJ3/admin-avatar.png",
+    "role": "admin",
+    "joined": "2024-01-15",
+    "phone": "+8801712345678"
+  },
+  {
+    "name": "Fatima Khan",
+    "email": "fatima@email.com",
+    "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200",
+    "role": "volunteer",
+    "joined": "2024-09-10",
+    "phone": "+8801812345678"
+  },
+  {
+    "name": "Arif Rahman",
+    "email": "arif@email.com",
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200",
+    "role": "volunteer",
+    "joined": "2025-03-15",
+    "phone": "+8801912345678"
+  },
+  {
+    "name": "Donor Example",
+    "email": "donor@email.com",
+    "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200",
+    "role": "user",
+    "joined": "2025-05-20",
+    "phone": "+8801512345678"
+  },
+  {
+    "name": "NGO Partner",
+    "email": "partner@example.org",
+    "photo": "https://i.postimg.cc/8C4XbZJ3/org-avatar.png",
+    "role": "partner",
+    "joined": "2024-11-01",
+    "phone": "+8801612345678"
+  },
+  {
+    "name": "Priya Saha",
+    "email": "priya@email.com",
+    "photo": "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=200",
+    "role": "volunteer",
+    "joined": "2024-11-20",
+    "phone": "+8801712349999"
+  }
+]

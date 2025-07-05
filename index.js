@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
-const donations = require('./donation.json');
+const campaigns = require('./campaigns.json');
 const volunteers = require('./volunteers.json');
 const testimonials = require('./testimonials.json');
 const app = express();
@@ -48,17 +48,16 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     await client.connect();
-    console.log("Pinged your deployment. You successfully connected to MongoDB!");
-    const donationCollection = client.db('cozyKindness').collection('donations');
+    const campaignCollection = client.db('cozyKindness').collection('campaigns');
     const volunteerCollection = client.db('cozyKindness').collection('volunteers');
     const testimonialCollection = client.db('cozyKindness').collection('testimonials');
 
 
 
-    const donationCount = await donationCollection.estimatedDocumentCount();
-    if(donationCount === 0){
-        await donationCollection.insertMany(donations);
-        console.log('donation seeded.')
+    const campaignCount = await campaignCollection.estimatedDocumentCount();
+    if(campaignCount === 0){
+        await campaignCollection.insertMany(campaigns);
+        console.log('campaign seeded.')
     }
     const volunteerCount = await volunteerCollection.estimatedDocumentCount();
     if(volunteerCount === 0){
@@ -96,20 +95,20 @@ async function run() {
         sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax'
       }).send({success: true})
     })
-    // Donation related API
-    app.get('/donations', async(req, res)=>{
+    // campaign related API
+    app.get('/campaigns', async(req, res)=>{
         try {
-            const result = await donationCollection.find().toArray();
+            const result = await campaignCollection.find().toArray();
             res.send(result);
         } catch (error) {
             res.status(500).send({error});
         }
     })
-    app.get('/donations/:id', async (req, res) =>{
+    app.get('/campaigns/:id', async (req, res) =>{
       try {
         const id = req.params.id;
         const query = {_id : new ObjectId(id)}
-        const result = await donationCollection.findOne(query);
+        const result = await campaignCollection.findOne(query);
         res.json(result);
       } catch (error) {
         res.send({error});
@@ -138,11 +137,11 @@ async function run() {
     })
 
     // Testimonial related APIs
-    app.get('/testimonals', async(req, res) =>{
+    app.get('/testimonials', async(req, res) =>{
       const result = await testimonialCollection.find().toArray();
       res.send(result);
     })
-    
+
   } finally {
     // Ensures that the client will close when you finish/error
     //await client.close();

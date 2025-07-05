@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Nusrat Jahan",
+    "position": "Executive Director",
+    "photo": "https://i.postimg.cc/8C4XbZJ3/team-nusrat.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com/in/nusrat-jahan"
+    }
+  },
+  {
+    "name": "Kamal Ahmed",
+    "position": "Program Manager",
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200",
+    "social": {
+      "linkedin": "https://linkedin.com/in/kamal-ahmed"
+    }
+  },
+  {
+    "name": "Tasnim Rahman",
+    "position": "Finance Director",
+    "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200",
+    "social": {
+      "linkedin": "https://linkedin.com/in/tasnim-rahman"
+    }
+  },
+  {
+    "name": "Arif Khan",
+    "position": "Field Operations",
+    "photo": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=200",
+    "social": {
+      "linkedin": "https://linkedin.com/in/arif-khan"
+    }
+  },
+  {
+    "name": "Sadia Islam",
+    "position": "Volunteer Coordinator",
+    "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200",
+    "social": {
+      "linkedin": "https://linkedin.com/in/sadia-islam"
+    }
+  },
+  {
+    "name": "Rezaul Karim",
+    "position": "IT Manager",
+    "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200",
+    "social": {
+      "linkedin": "https://linkedin.com/in/rezaul-karim"
+    }
+  }
+]
