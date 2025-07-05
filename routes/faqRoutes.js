@@ -1,8 +1,8 @@
 const express = require('express');
 const { getFaqs, getFaqById } = require('../controllers/faqController');
-const faqRouter = express.Router();
+const faqRoutes = express.Router();
 
-faqRouter.get('/', getFaqs);
-faqRouter.get('/:id', getFaqById);
+faqRoutes.get('/', getFaqs);
+faqRoutes.get('/:id', getFaqById);
 
-module.exports = faqRouter;
+module.exports = faqRoutes;
