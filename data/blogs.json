@@ -4,7 +4,7 @@
     "slug": "how-winter-donations-save-lives",
     "author": {
       "name": "Amina Khan",
-      "avatar": "/images/authors/amina.jpg",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200",
       "bio": "Social worker with 10 years experience in winter relief programs",
       "social": {
         "twitter": "@AminaWinterCare",
@@ -30,7 +30,7 @@
     "slug": "essential-winter-items",
     "author": {
       "name": "Rahim Ahmed",
-      "avatar": "/images/authors/rahim.jpg",
+      "avatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=Rahim",
       "bio": "Logistics coordinator for winter relief efforts",
       "social": {
         "twitter": "@RahimWarmHands"
@@ -54,7 +54,7 @@
     "slug": "volunteer-spotlight",
     "author": {
       "name": "Winter Donation Team",
-      "avatar": "/images/authors/team-logo.jpg",
+      "avatar": "https://i.postimg.cc/ZRgb5X7G/community-volunteers-sorting-winter-clothing-donations.jpg",
       "bio": "Official account of the Winter Donation initiative"
     },
     "date": "2023-11-05T07:00:00Z",
@@ -75,7 +75,7 @@
     "slug": "community-donation-drive",
     "author": {
       "name": "Farhana Begum",
-      "avatar": "/images/authors/farhana.jpg",
+      "avatar": "https://images.unsplash.com/photo-1593104547489-5cfb3839a3b5?w=200",
       "bio": "Community organizer for winter relief programs"
     },
     "date": "2023-10-28T10:30:00Z",
@@ -96,7 +96,7 @@
     "slug": "winter-fabrics-guide",
     "author": {
       "name": "Dr. Tasnim Hasan",
-      "avatar": "/images/authors/tasnim.jpg",
+      "avatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=Tasnim",
       "bio": "Textile scientist specializing in thermal properties"
     },
     "date": "2023-10-20T11:00:00Z",
@@ -117,7 +117,7 @@
     "slug": "2023-impact-report",
     "author": {
       "name": "Winter Donation Team",
-      "avatar": "/images/authors/team-logo.jpg",
+      "avatar": "https://i.postimg.cc/rpVFn1RP/2023-impact-report.jpg",
       "bio": "Official account of the Winter Donation initiative"
     },
     "date": "2023-10-15T09:00:00Z",
@@ -138,7 +138,7 @@
     "slug": "preparing-donations",
     "author": {
       "name": "Nusrat Jahan",
-      "avatar": "/images/authors/nusrat.jpg",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200",
       "bio": "Quality control supervisor for donation center"
     },
     "date": "2023-10-10T08:45:00Z",
@@ -159,7 +159,7 @@
     "slug": "field-stories-grandmother",
     "author": {
       "name": "Imran Hossain",
-      "avatar": "/images/authors/imran.jpg",
+      "avatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=Imran",
       "bio": "Field reporter documenting donation distributions"
     },
     "date": "2023-10-05T07:30:00Z",
@@ -180,7 +180,7 @@
     "slug": "corporate-donations",
     "author": {
       "name": "Sabrina Chowdhury",
-      "avatar": "/images/authors/sabrina.jpg",
+      "avatar": "https://images.unsplash.com/photo-1628890920690-9e29d0019b9b?w=200",
       "bio": "Corporate partnerships manager"
     },
     "date": "2023-09-28T10:00:00Z",
@@ -201,7 +201,7 @@
     "slug": "winter-in-bangladesh",
     "author": {
       "name": "Dr. Arif Rahman",
-      "avatar": "/images/authors/arif.jpg",
+      "avatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=Arif",
       "bio": "Climate researcher at Dhaka University"
     },
     "date": "2023-09-20T11:20:00Z",
@@ -222,7 +222,7 @@
     "slug": "distribution-schedule",
     "author": {
       "name": "Winter Donation Team",
-      "avatar": "/images/authors/team-logo.jpg",
+      "avatar": "https://i.postimg.cc/3wtrPkgJ/Distribution-Schedule.png",
       "bio": "Official account of the Winter Donation initiative"
     },
     "date": "2023-09-15T08:15:00Z",
