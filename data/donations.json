@@ -1,7 +1,7 @@
 [
   {
     "userId": "donor@email.com",
-    "campaignId": "Winter Blankets for Rangpur",
+    "campaignId": "Cozy Drive for Rangpur Elderly",
     "amount": 5000,
     "date": "2025-06-18",
     "method": "bkash",
@@ -9,7 +9,7 @@
   },
   {
     "userId": "partner@example.org",
-    "campaignId": "Coats for Dhaka Street Children",
+    "campaignId": "Warm Coats for Dhaka's Streets",
     "amount": 20000,
     "date": "2025-06-20",
     "method": "bank",
@@ -17,7 +17,7 @@
   },
   {
     "userId": "anonymous",
-    "campaignId": "Sylhet Tea Garden Workers",
+    "campaignId": "Bundle Joy for Sylhet Kids",
     "amount": 1000,
     "date": "2025-06-15",
     "method": "nagad",
@@ -25,7 +25,7 @@
   },
   {
     "userId": "fatima@email.com",
-    "campaignId": "Rajshahi Elderly Care",
+    "campaignId": "Rajshahi Blanket Drive",
     "amount": 3000,
     "date": "2025-06-25",
     "method": "bkash",

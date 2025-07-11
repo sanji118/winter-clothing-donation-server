@@ -1,26 +1,42 @@
 [
   {
-    "question": "How are my donations distributed?",
-    "answer": "All items are distributed by our verified partner NGOs with full documentation including photos and recipient signatures."
+    "question": "How are donations distributed in Dhaka?",
+    "answer": "Our 'Warm Coats for Dhaka's Streets' campaign distributes through verified shelters and street outreach teams with full documentation.",
+    "campaignId": "Warm Coats for Dhaka's Streets"
   },
   {
-    "question": "Can I donate used clothing?",
-    "answer": "We accept gently used winter clothing that is clean and in good condition. All items are sanitized before distribution."
+    "question": "What winter items are needed for Sylhet children?",
+    "answer": "'Bundle Joy for Sylhet Kids' specifically requests school sweaters, woolen socks, and mittens for tea garden communities.",
+    "campaignId": "Bundle Joy for Sylhet Kids"
   },
   {
-    "question": "How can I volunteer?",
-    "answer": "Complete our online volunteer form and attend an orientation session. No prior experience required for most roles."
+    "question": "How can I volunteer for the Rajshahi blanket drive?",
+    "answer": "We need 10 volunteers for 'Rajshahi Blanket Drive' distribution days - sign up through our volunteer portal.",
+    "campaignId": "Rajshahi Blanket Drive"
   },
   {
-    "question": "What percentage goes to administrative costs?",
-    "answer": "Less than 10% of donations cover essential operational costs. 90%+ goes directly to beneficiaries."
+    "question": "What makes Rangpur's elderly vulnerable in winter?",
+    "answer": "'Cozy Drive for Rangpur Elderly' focuses on sub-zero temperatures in northern districts where seniors lack heating.",
+    "campaignId": "Cozy Drive for Rangpur Elderly"
   },
   {
-    "question": "Can I specify where my donation should go?",
-    "answer": "Yes! During donation you can select a specific campaign or region you want to support."
+    "question": "Why does Mymensingh need school uniforms?",
+    "answer": "'Mymensingh Winter Smiles' provides warm uniforms as many rural schools lack heating facilities.",
+    "campaignId": "Mymensingh Winter Smiles"
   },
   {
-    "question": "How do I get a donation receipt?",
-    "answer": "Automated receipts are emailed immediately after donation. For physical copies, contact our office within 30 days."
+    "question": "What documentation will I receive for my donation?",
+    "answer": "All campaigns provide: 1) Digital receipt 2) Distribution photos 3) Beneficiary count report",
+    "campaignId": null
+  },
+  {
+    "question": "How are hill tract distributions different?",
+    "answer": "'Chittagong Hill Tracts' campaign uses special mobile teams to reach remote tribal communities.",
+    "campaignId": "Chittagong Hill Tracts"
+  },
+  {
+    "question": "Why focus on Khulna's fishermen?",
+    "answer": "'Khulna Fishermen Relief' addresses unique needs of coastal workers facing cold river winds daily.",
+    "campaignId": "Khulna Fishermen Relief"
   }
 ]

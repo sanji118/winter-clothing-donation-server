@@ -23,7 +23,8 @@ exports.postCommentToBlog = async (req, res) => {
         const newComment = {
             text: comment,
             user,
-            date: new Date()
+            date: new Date(),
+            likes: 0
         };
 
         const result = await collection.updateOne(
@@ -39,4 +40,15 @@ exports.postCommentToBlog = async (req, res) => {
     } catch (error) {
         res.status(500).send({ success: false, message: "Failed to add comment", error });
     }
+}
+
+exports.likeComment = async (req, res) => {
+    try {
+        
+    } catch (error) {
+        
+    }
+}
+exports.deleteComment = async (req, res) => {
+
 }

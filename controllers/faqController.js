@@ -12,3 +12,7 @@ exports.getFaqById = async (req, res) => {
   const result = await collection.findOne({ _id: new ObjectId(id) });
   res.send(result);
 };
+
+exports.postQuestions = async (req, res ) => {
+  
+}

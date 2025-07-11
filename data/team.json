@@ -2,49 +2,78 @@
   {
     "name": "Nusrat Jahan",
     "position": "Executive Director",
-    "photo": "https://i.postimg.cc/8C4XbZJ3/team-nusrat.jpg",
+    "photo": "https://i.postimg.cc/9McvgVVV/openart-image-Qc-MKIj-NA-1752000742409-raw.jpg",
+    "bio": "With over 15 years of experience in nonprofit leadership, Nusrat founded WarmHope in 2010 to address winter clothing shortages in vulnerable communities. She holds an MBA in Social Enterprise.",
     "social": {
-      "linkedin": "https://linkedin.com/in/nusrat-jahan"
-    }
+      "linkedin": "https://linkedin.com/in/nusrat-jahan",
+      "twitter": "https://twitter.com/nusrat_warmhope"
+    },
+    "department": "Executive",
+    "years_with_org": 12,
+    "gender": "female"
   },
   {
     "name": "Kamal Ahmed",
     "position": "Program Manager",
-    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200",
+    "photo": "https://i.postimg.cc/k5Pr8Kp2/openart-df628015-af39-4249-bdcf-58696c2753b3.png",
+    "bio": "Kamal oversees our distribution network across 5 regions, ensuring efficient delivery of winter essentials. Formerly with Red Cross, he brings 8 years of logistics expertise.",
     "social": {
-      "linkedin": "https://linkedin.com/in/kamal-ahmed"
-    }
+      "linkedin": "https://linkedin.com/in/kamal-ahmed",
+      "facebook": "https://facebook.com/kamal.warmhope"
+    },
+    "department": "Operations",
+    "years_with_org": 5,
+    "gender": "male"
   },
   {
     "name": "Tasnim Rahman",
     "position": "Finance Director",
-    "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200",
+    "photo": "https://i.postimg.cc/cHTPVj43/openart-image-Tlf0z9ef-1752000742962-raw.jpg",
+    "bio": "CPA-certified financial professional managing our $2M annual budget. Tasnim implements rigorous accountability measures while maximizing donor impact.",
     "social": {
       "linkedin": "https://linkedin.com/in/tasnim-rahman"
-    }
+    },
+    "department": "Finance",
+    "years_with_org": 7,
+    "gender": "female"
   },
   {
     "name": "Arif Khan",
-    "position": "Field Operations",
-    "photo": "https://images.unsplash.com/photo-1566492031773-4f4e44671857?w=200",
+    "position": "Field Operations Director",
+    "photo": "https://i.postimg.cc/4ySq39cN/openart-image-CPyal-GAq-1752000742128-raw.jpg",
+    "bio": "Leads our 50+ field staff and volunteers in direct community outreach. Arif's grassroots experience helps us identify areas of greatest need each winter season.",
     "social": {
-      "linkedin": "https://linkedin.com/in/arif-khan"
-    }
+      "linkedin": "https://linkedin.com/in/arif-khan",
+      "instagram": "https://instagram.com/arif.warmhope"
+    },
+    "department": "Operations",
+    "years_with_org": 9,
+    "gender": "male"
   },
   {
-    "name": "Sadia Islam",
+    "name": "Sayed Islam",
     "position": "Volunteer Coordinator",
-    "photo": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200",
+    "photo": "https://i.postimg.cc/1zGkKXkJ/openart-image-MDkyru-Yd-1752000802320-raw.jpg",
+    "bio": "Manages our 300+ volunteer network. Sadia developed our acclaimed training program that prepares volunteers for winter distribution challenges.",
     "social": {
-      "linkedin": "https://linkedin.com/in/sadia-islam"
-    }
+      "linkedin": "https://linkedin.com/in/sadia-islam",
+      "twitter": "https://twitter.com/sadia_volunteers"
+    },
+    "department": "Community Engagement",
+    "years_with_org": 4,
+    "gender": "female"
   },
   {
     "name": "Rezaul Karim",
     "position": "IT Manager",
-    "photo": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200",
+    "photo": "https://i.postimg.cc/4ydjZ5mS/openart-image-o-RFf-CZcv-1752000742795-raw.jpg",
+    "bio": "Oversees our donor management systems and developed the WarmHope mobile app for real-time inventory tracking. Former tech startup CTO with a passion for social impact.",
     "social": {
-      "linkedin": "https://linkedin.com/in/rezaul-karim"
-    }
+      "linkedin": "https://linkedin.com/in/rezaul-karim",
+      "github": "https://github.com/rezaul-warmhope"
+    },
+    "department": "Technology",
+    "years_with_org": 3,
+    "gender": "male"
   }
 ]
