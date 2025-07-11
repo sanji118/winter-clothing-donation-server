@@ -13,6 +13,13 @@ exports.getFaqById = async (req, res) => {
   res.send(result);
 };
 
-exports.postQuestions = async (req, res ) => {
-  
+exports.getFaqBySlug = async (req, res ) => {
+  const {slug} = req.params;
+  const collection = getCollection('faq');
+  const result = await collection.findOne({slug});
+  if (!result) {
+    return res.status(404).json({ message: 'FAQs not found' });
+  }
+
+  res.send(result);
 }

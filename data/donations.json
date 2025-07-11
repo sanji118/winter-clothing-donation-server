@@ -1,7 +1,7 @@
 [
   {
     "userId": "donor@email.com",
-    "campaignId": "Cozy Drive for Rangpur Elderly",
+    "campaignSlug": "cozy-drive-for-rangpur-elderly",
     "amount": 5000,
     "date": "2025-06-18",
     "method": "bkash",
@@ -9,7 +9,7 @@
   },
   {
     "userId": "partner@example.org",
-    "campaignId": "Warm Coats for Dhaka's Streets",
+    "campaignSlug": "warm-coats-for-dhakas-streets",
     "amount": 20000,
     "date": "2025-06-20",
     "method": "bank",
@@ -17,7 +17,7 @@
   },
   {
     "userId": "anonymous",
-    "campaignId": "Bundle Joy for Sylhet Kids",
+    "campaignSlug": "bundle-joy-for-sylhet-kids",
     "amount": 1000,
     "date": "2025-06-15",
     "method": "nagad",
@@ -25,7 +25,7 @@
   },
   {
     "userId": "fatima@email.com",
-    "campaignId": "Rajshahi Blanket Drive",
+    "campaignSlug": "rajshahi-blanket-drive",
     "amount": 3000,
     "date": "2025-06-25",
     "method": "bkash",
@@ -33,7 +33,7 @@
   },
   {
     "userId": "arif@email.com",
-    "campaignId": "Chittagong Hill Tracts",
+    "campaignSlug": "chittagong-hill-tracts",
     "amount": 2500,
     "date": "2025-06-28",
     "method": "card",
@@ -41,10 +41,26 @@
   },
   {
     "userId": "priya@email.com",
-    "campaignId": "Khulna Fishermen Relief",
+    "campaignSlug": "khulna-fishermen-relief",
     "amount": 7000,
     "date": "2025-07-01",
     "method": "nagad",
     "transactionId": "NGD555XXX666"
+  },
+  {
+    "userId": "samir@email.com",
+    "campaignSlug": "mymensingh-winter-smiles",
+    "amount": 4000,
+    "date": "2025-06-22",
+    "method": "bkash",
+    "transactionId": "BKA444AAA555"
+  },
+  {
+    "userId": "corporate@company.org",
+    "campaignSlug": "barisal-winter-warmth",
+    "amount": 15000,
+    "date": "2025-06-30",
+    "method": "bank",
+    "transactionId": "BNK666BBB777"
   }
 ]

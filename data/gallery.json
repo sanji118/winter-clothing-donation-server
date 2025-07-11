@@ -2,43 +2,57 @@
   {
     "image": "https://i.postimg.cc/50Y3s3Jj/close-up-volunteer-oganizing-stuff.jpg",
     "caption": "Volunteers sorting donations at Dhaka warehouse",
-    "campaignId": "Warm Coats for Dhaka's Streets",
+    "campaignSlug": "warm-coats-for-dhakas-streets",
     "uploadedBy": "admin@warmhearts.org",
     "date": "2025-06-20"
   },
   {
     "image": "https://i.postimg.cc/x8LP21c2/photorealistic-kid-refugee-camp.jpg",
     "caption": "Children receiving winter kits in Rangpur",
-    "campaignId": "Cozy Drive for Rangpur Elderly",
+    "campaignSlug": "cozy-drive-for-rangpur-elderly",
     "uploadedBy": "fatima@email.com",
     "date": "2025-06-15"
   },
   {
     "image": "https://i.postimg.cc/htc2KTL3/elderly-men-are-exposed-rainwater.jpg",
     "caption": "Elderly beneficiary in Rajshahi",
-    "campaignId": "Rajshahi Blanket Drive",
+    "campaignSlug": "rajshahi-blanket-drive",
     "uploadedBy": "jamal@email.com",
     "date": "2025-06-22"
   },
   {
     "image": "https://i.postimg.cc/htspvvM4/hopeless-refugee-refugee-camp.jpg",
     "caption": "Distribution day at Sylhet tea gardens",
-    "campaignId": "Bundle Joy for Sylhet Kids",
+    "campaignSlug": "bundle-joy-for-sylhet-kids",
     "uploadedBy": "admin@warmhearts.org",
     "date": "2025-01-10"
   },
   {
     "image": "https://i.postimg.cc/pLsJx7Xp/flat-illustration-clothing-donation-concept.jpg",
     "caption": "Preparing packages for hill tract communities",
-    "campaignId": "Chittagong Hill Tracts",
+    "campaignSlug": "chittagong-hill-tracts",
     "uploadedBy": "priya@email.com",
     "date": "2025-06-30"
   },
   {
     "image": "https://i.postimg.cc/JhtchqGK/hand-drawn-clothing-donation-concept.jpg",
     "caption": "Fishermen's families receiving winter gear",
-    "campaignId": "Khulna Fishermen Relief",
+    "campaignSlug": "khulna-fishermen-relief",
     "uploadedBy": "arif@email.com",
+    "date": "2025-06-28"
+  },
+  {
+    "image": "https://i.postimg.cc/8zJQYbXJ/school-children-receiving-uniforms.jpg",
+    "caption": "Students getting winter uniforms in Mymensingh",
+    "campaignSlug": "mymensingh-winter-smiles",
+    "uploadedBy": "samir@email.com",
+    "date": "2025-06-25"
+  },
+  {
+    "image": "https://i.postimg.cc/4yN7bY7J/riverine-community-distribution.jpg",
+    "caption": "Barisal riverbank distribution preparation",
+    "campaignSlug": "barisal-winter-warmth",
+    "uploadedBy": "barisal-coordinator@warmhearts.org",
     "date": "2025-06-28"
   }
 ]

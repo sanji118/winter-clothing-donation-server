@@ -22,7 +22,7 @@ app.use(allRoutes);
 
 
 app.get('/', (req, res) => {
-  res.send('Welcome to Cozy Kindness Server!');
+  res.send('Welcome to Cozy Kindness Server!!');
 });
 
 

@@ -12,3 +12,15 @@ exports.getGalleryItemById = async (req, res) => {
   const result = await collection.findOne({ _id: new ObjectId(id) });
   res.send(result);
 };
+
+
+exports.getGalleryBySlug = async (req, res ) => {
+  const {slug} = req.params;
+  const collection = getCollection('gallery');
+  const result = await collection.findOne({slug});
+  if (!result) {
+    return res.status(404).json({ message: 'Gallery not found' });
+  }
+
+  res.send(result);
+}

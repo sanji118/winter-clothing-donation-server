@@ -2,41 +2,41 @@
   {
     "question": "How are donations distributed in Dhaka?",
     "answer": "Our 'Warm Coats for Dhaka's Streets' campaign distributes through verified shelters and street outreach teams with full documentation.",
-    "campaignId": "Warm Coats for Dhaka's Streets"
+    "campaignSlug": "warm-coats-for-dhakas-streets"
   },
   {
     "question": "What winter items are needed for Sylhet children?",
     "answer": "'Bundle Joy for Sylhet Kids' specifically requests school sweaters, woolen socks, and mittens for tea garden communities.",
-    "campaignId": "Bundle Joy for Sylhet Kids"
+    "campaignSlug": "bundle-joy-for-sylhet-kids"
   },
   {
     "question": "How can I volunteer for the Rajshahi blanket drive?",
     "answer": "We need 10 volunteers for 'Rajshahi Blanket Drive' distribution days - sign up through our volunteer portal.",
-    "campaignId": "Rajshahi Blanket Drive"
+    "campaignSlug": "rajshahi-blanket-drive"
   },
   {
     "question": "What makes Rangpur's elderly vulnerable in winter?",
     "answer": "'Cozy Drive for Rangpur Elderly' focuses on sub-zero temperatures in northern districts where seniors lack heating.",
-    "campaignId": "Cozy Drive for Rangpur Elderly"
+    "campaignSlug": "cozy-drive-for-rangpur-elderly"
   },
   {
     "question": "Why does Mymensingh need school uniforms?",
     "answer": "'Mymensingh Winter Smiles' provides warm uniforms as many rural schools lack heating facilities.",
-    "campaignId": "Mymensingh Winter Smiles"
+    "campaignSlug": "mymensingh-winter-smiles"
   },
   {
     "question": "What documentation will I receive for my donation?",
     "answer": "All campaigns provide: 1) Digital receipt 2) Distribution photos 3) Beneficiary count report",
-    "campaignId": null
+    "campaignSlug": null
   },
   {
     "question": "How are hill tract distributions different?",
     "answer": "'Chittagong Hill Tracts' campaign uses special mobile teams to reach remote tribal communities.",
-    "campaignId": "Chittagong Hill Tracts"
+    "campaignSlug": "chittagong-hill-tracts"
   },
   {
     "question": "Why focus on Khulna's fishermen?",
     "answer": "'Khulna Fishermen Relief' addresses unique needs of coastal workers facing cold river winds daily.",
-    "campaignId": "Khulna Fishermen Relief"
+    "campaignSlug": "khulna-fishermen-relief"
   }
 ]
