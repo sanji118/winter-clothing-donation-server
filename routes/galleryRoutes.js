@@ -3,7 +3,7 @@ const { getGallery, getGalleryItemById, getGalleryBySlug } = require('../control
 const galleryRoutes = express.Router();
 
 galleryRoutes.get('/', getGallery);
-galleryRoutes.get('/:id', getGalleryItemById);
-galleryRoutes.get('/:slug', getGalleryBySlug);
+galleryRoutes.get('/id/:id', getGalleryItemById);
+galleryRoutes.get('/slug/:slug', getGalleryBySlug);
 
 module.exports = galleryRoutes;

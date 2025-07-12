@@ -18,7 +18,7 @@ exports.getDonationById = async (req, res) => {
 exports.getDonationBySlug = async (req, res ) => {
   const {slug} = req.params;
   const collection = getCollection('donations');
-  const result = await collection.findOne({slug});
+  const result = await collection.find({campaignSlug: slug}).toArray();
   if (!result) {
     return res.status(404).json({ message: 'Donation not found' });
   }

@@ -17,7 +17,7 @@ exports.getGalleryItemById = async (req, res) => {
 exports.getGalleryBySlug = async (req, res ) => {
   const {slug} = req.params;
   const collection = getCollection('gallery');
-  const result = await collection.findOne({slug});
+  const result = await collection.find({campaignSlug: slug}).toArray();
   if (!result) {
     return res.status(404).json({ message: 'Gallery not found' });
   }

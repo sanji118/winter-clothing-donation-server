@@ -3,7 +3,7 @@
     "slug": "warm-coats-for-dhakas-streets",
     "title": "Warm Coats for Dhaka's Streets",
     "image": "https://i.postimg.cc/pLsJx7Xp/flat-illustration-clothing-donation-concept-52683-55515.avif",
-    "description": "A campaign to distribute warm coats and blankets to the homeless in Dhaka city.",
+    "description": "This heartfelt campaign is dedicated to supporting the thousands of homeless individuals braving the winter nights on the streets of Dhaka. As the temperatures drop, warm coats and blankets become essential for survival. Our mission is to collect and distribute quality winter wear to those in need, especially the elderly, children, and the disabled who have no proper shelter. Your contribution will directly bring warmth, comfort, and dignity to their lives.",
     "status": "Active",
     "contactInfo": "contact@warmheartsbd.org",
     "division": "Dhaka",
@@ -19,14 +19,42 @@
     "startDate": "2025-06-01",
     "endDate": "2025-12-31",
     "lastUpdated": "2025-07-01",
-    "createdBy": "admin@warmhearts.org",
-    "volunteersNeeded": 8
+    "organizer": {
+      "name": "Aminul Islam",
+      "email": "aminul@warmheartsbd.org",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200",
+      "phone": "+8801712345678",
+      "organization": "Warm Hearts Bangladesh"
+    },
+    "volunteersNeeded": 8,
+    "comments": [
+      {
+        "text": "Amazing initiative! Can't wait to contribute again.",
+        "user": {
+          "name": "Farhana Akter",
+          "email": "farhana92@gmail.com",
+          "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200"
+        },
+        "date": "2025-07-01T10:15:22.890Z",
+        "likes": 3
+      },
+      {
+        "text": "Please share more photos of the distribution events.",
+        "user": {
+          "name": "Joynal Abedin",
+          "email": "joynalbd@gmail.com",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200"
+        },
+        "date": "2025-07-02T14:30:45.890Z",
+        "likes": 1
+      }
+    ]
   },
   {
     "slug": "bundle-joy-for-sylhet-kids",
     "title": "Bundle Joy for Sylhet Kids",
     "image": "https://i.postimg.cc/JhtchqGK/hand-drawn-clothing-donation-concept-52683-54811.avif",
-    "description": "Collecting winter clothes and school sweaters for underprivileged children in Sylhet.",
+    "description": "Bundle Joy for Sylhet Kids aims to bring warmth and smiles to underprivileged children in Sylhet by providing them with winter clothes and school sweaters. Many children attend school in thin, worn-out clothes, making them vulnerable to cold-related illnesses. Through this campaign, we seek to ensure that every child has access to proper winter clothing, allowing them to stay warm and continue their education without interruption.",
     "status": "Active",
     "contactInfo": "sylhet@bundleoflove.org",
     "division": "Sylhet",
@@ -42,14 +70,32 @@
     "startDate": "2025-06-15",
     "endDate": "2025-12-15",
     "lastUpdated": "2025-07-01",
-    "createdBy": "sylhet-coordinator@warmhearts.org",
-    "volunteersNeeded": 5
+    "organizer": {
+      "name": "Nusrat Jahan",
+      "email": "nusrat@bundleoflove.org",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200",
+      "phone": "+8801812345678",
+      "organization": "Bundle of Love Foundation"
+    },
+    "volunteersNeeded": 5,
+    "comments": [
+      {
+        "text": "It feels great to help the kids. Thanks for organizing!",
+        "user": {
+          "name": "Shamim Akther",
+          "email": "shamim.akther@gmail.com",
+          "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200"
+        },
+        "date": "2025-07-01T11:20:33.890Z",
+        "likes": 2
+      }
+    ]
   },
   {
     "slug": "rajshahi-blanket-drive",
     "title": "Rajshahi Blanket Drive",
     "image": "https://i.postimg.cc/tgfdnx6b/hand-drawn-clothing-donation-landing-page-23-2148821740.avif",
-    "description": "Distributing wool blankets to remote villages in Rajshahi during winter.",
+    "description": "Launching this winter, the Rajshahi Blanket Drive focuses on remote villages where access to basic winter protection is scarce. With harsh winds and cold nights, families in these areas struggle to stay warm. This upcoming campaign will distribute woolen blankets and thermal essentials to ensure no household sleeps in the cold. Join us in wrapping warmth around Rajshahi's most vulnerable communities.",
     "status": "Upcoming",
     "contactInfo": "info@rajshahicoldaid.org",
     "division": "Rajshahi",
@@ -65,14 +111,32 @@
     "startDate": "2025-11-01",
     "endDate": "2026-01-31",
     "lastUpdated": "2025-06-29",
-    "createdBy": "rajshahi-coordinator@warmhearts.org",
-    "volunteersNeeded": 10
+    "organizer": {
+      "name": "Rafiqul Islam",
+      "email": "rafiq@rajshahicoldaid.org",
+      "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200",
+      "phone": "+8801912345678",
+      "organization": "Rajshahi Cold Aid Society"
+    },
+    "volunteersNeeded": 10,
+    "comments": [
+      {
+        "text": "When will the donation process begin?",
+        "user": {
+          "name": "Mita Rahman",
+          "email": "mita.rj@gmail.com",
+          "avatar": "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=200"
+        },
+        "date": "2025-07-03T09:45:12.890Z",
+        "likes": 0
+      }
+    ]
   },
   {
     "slug": "cozy-drive-for-rangpur-elderly",
     "title": "Cozy Drive for Rangpur Elderly",
     "image": "https://i.postimg.cc/tgfdnx6b/hand-drawn-clothing-donation-landing-page-23-2148821740.avif",
-    "description": "Winter essentials for the elderly in northern Rangpur facing harsh winters.",
+    "description": "Elderly citizens in northern Rangpur face some of the harshest winter conditions in Bangladesh. Cozy Drive for Rangpur Elderly is designed to provide them with warm clothes, blankets, and thermal wear, ensuring comfort and protection from the biting cold. Many of these seniors live alone or in rural areas with little support. Your generosity can make a life-saving difference this winter.",
     "status": "Active",
     "contactInfo": "rangpur@frostrelief.org",
     "division": "Rangpur",
@@ -88,14 +152,32 @@
     "startDate": "2025-06-20",
     "endDate": "2025-12-20",
     "lastUpdated": "2025-07-01",
-    "createdBy": "rangpur-coordinator@warmhearts.org",
-    "volunteersNeeded": 6
+    "organizer": {
+      "name": "Taslima Begum",
+      "email": "taslima@frostrelief.org",
+      "avatar": "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=200",
+      "phone": "+8801612345678",
+      "organization": "Frost Relief Foundation"
+    },
+    "volunteersNeeded": 6,
+    "comments": [
+      {
+        "text": "Very thoughtful initiative for our elders. Proud to be a donor!",
+        "user": {
+          "name": "Emran Hossain",
+          "email": "emran.rangpur@gmail.com",
+          "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200"
+        },
+        "date": "2025-07-01T16:22:10.890Z",
+        "likes": 5
+      }
+    ]
   },
   {
     "slug": "mymensingh-winter-smiles",
     "title": "Mymensingh Winter Smiles",
     "image": "https://i.postimg.cc/pLsJx7Xp/flat-illustration-clothing-donation-concept-52683-55515.avif",
-    "description": "A donation drive for school uniforms and warm clothing in Mymensingh.",
+    "description": "This initiative brings together compassionate hearts to collect school uniforms and warm clothing for children in Mymensingh. With winter posing a significant challenge to low-income families, our goal is to keep children both warm and motivated to attend school regularly. By supporting this campaign, you are helping children study with comfort and confidence throughout the chilly months.",
     "status": "Active",
     "contactInfo": "connect@wintersmiles.org",
     "division": "Mymensingh",
@@ -111,14 +193,32 @@
     "startDate": "2025-06-10",
     "endDate": "2025-12-10",
     "lastUpdated": "2025-07-01",
-    "createdBy": "mymensingh-coordinator@warmhearts.org",
-    "volunteersNeeded": 7
+    "organizer": {
+      "name": "Arif Khan",
+      "email": "arif@wintersmiles.org",
+      "avatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200",
+      "phone": "+8801512345678",
+      "organization": "Winter Smiles Initiative"
+    },
+    "volunteersNeeded": 7,
+    "comments": [
+      {
+        "text": "Let me know if I can volunteer at schools too!",
+        "user": {
+          "name": "Nishi Khan",
+          "email": "nishi.khan@gmail.com",
+          "avatar": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=200"
+        },
+        "date": "2025-07-02T13:45:33.890Z",
+        "likes": 2
+      }
+    ]
   },
   {
     "slug": "khulna-fishermen-relief",
     "title": "Khulna Fishermen Relief",
     "image": "https://i.postimg.cc/JhtchqGK/hand-drawn-clothing-donation-concept-52683-54811.avif",
-    "description": "Providing winter gear for coastal fishermen facing cold river winds in Khulna.",
+    "description": "Khulna Fishermen Relief is dedicated to aiding coastal fishermen who endure cold, harsh river winds during winter fishing trips. These brave workers often lack adequate clothing and gear, putting their health at risk. Through this campaign, we aim to provide insulated jackets, gloves, and winter essentials so that they can continue their work safely and comfortably.",
     "status": "Active",
     "contactInfo": "khulna@coastalrelief.org",
     "division": "Khulna",
@@ -134,14 +234,32 @@
     "startDate": "2025-06-05",
     "endDate": "2025-12-05",
     "lastUpdated": "2025-07-01",
-    "createdBy": "khulna-coordinator@warmhearts.org",
-    "volunteersNeeded": 8
+    "organizer": {
+      "name": "Sadia Ahmed",
+      "email": "sadia@coastalrelief.org",
+      "avatar": "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=200",
+      "phone": "+8801412345678",
+      "organization": "Coastal Relief Network"
+    },
+    "volunteersNeeded": 8,
+    "comments": [
+      {
+        "text": "Great effort to support hardworking fishermen. Much appreciated.",
+        "user": {
+          "name": "Fahim Rahman",
+          "email": "fahim.khulna@gmail.com",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200"
+        },
+        "date": "2025-07-01T12:30:15.890Z",
+        "likes": 4
+      }
+    ]
   },
   {
     "slug": "chittagong-hill-tracts",
     "title": "Chittagong Hill Tracts",
     "image": "https://i.postimg.cc/pLsJx7Xp/flat-illustration-clothing-donation-concept-52683-55515.avif",
-    "description": "Winter clothing for remote tribal communities in the hill tracts region.",
+    "description": "In the remote, hilly terrain of the Chittagong Hill Tracts, tribal communities face freezing temperatures with minimal resources. This campaign strives to reach these isolated areas and distribute warm clothes, blankets, and protective winter gear to families and children. Your support ensures that these underserved communities are not forgotten in the cold season.",
     "status": "Active",
     "contactInfo": "hilltracts@tribalaid.org",
     "division": "Chittagong",
@@ -157,19 +275,37 @@
     "startDate": "2025-06-08",
     "endDate": "2025-12-08",
     "lastUpdated": "2025-07-01",
-    "createdBy": "chittagong-coordinator@warmhearts.org",
-    "volunteersNeeded": 5
+    "organizer": {
+      "name": "Rupak Chakma",
+      "email": "rupak@tribalaid.org",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=200",
+      "phone": "+8801312345678",
+      "organization": "Tribal Aid Foundation"
+    },
+    "volunteersNeeded": 5,
+    "comments": [
+      {
+        "text": "It's good to see tribal areas getting support. Keep going!",
+        "user": {
+          "name": "Trina Dey",
+          "email": "trina.chy@gmail.com",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200"
+        },
+        "date": "2025-07-01T15:45:22.890Z",
+        "likes": 3
+      }
+    ]
   },
   {
     "slug": "barisal-winter-warmth",
     "title": "Barisal Winter Warmth",
     "image": "https://i.postimg.cc/tgfdnx6b/hand-drawn-clothing-donation-landing-page-23-2148821740.avif",
-    "description": "Distributing warm clothing to riverine communities in Barisal division.",
+    "description": "Barisal's riverine communities often remain neglected when winter aid is distributed. Barisal Winter Warmth is an upcoming campaign focusing on delivering warm clothing to families living in floating homes and riverbanks. These communities face unique challenges due to their location and climate. Join us in extending a hand of warmth and kindness to those who need it most.",
     "status": "Upcoming",
     "contactInfo": "barisal@riveraid.org",
     "division": "Barisal",
     "location": {
-      "lat": 22.7010,
+      "lat": 22.701,
       "lng": 90.3535,
       "address": "Barisal City"
     },
@@ -180,7 +316,25 @@
     "startDate": "2025-11-10",
     "endDate": "2026-01-10",
     "lastUpdated": "2025-06-30",
-    "createdBy": "barisal-coordinator@warmhearts.org",
-    "volunteersNeeded": 7
+    "organizer": {
+      "name": "Bappi Saha",
+      "email": "bappi@riveraid.org",
+      "avatar": "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=200",
+      "phone": "+8801212345678",
+      "organization": "River Aid Bangladesh"
+    },
+    "volunteersNeeded": 7,
+    "comments": [
+      {
+        "text": "Looking forward to helping in distribution when the campaign starts.",
+        "user": {
+          "name": "Rubel Hossain",
+          "email": "rubel.barisal@gmail.com",
+          "avatar": "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?w=200"
+        },
+        "date": "2025-07-02T17:30:45.890Z",
+        "likes": 1
+      }
+    ]
   }
 ]

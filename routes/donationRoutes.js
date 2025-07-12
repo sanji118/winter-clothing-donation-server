@@ -3,8 +3,8 @@ const { getDonations, getDonationById, getDonationBySlug } = require('../control
 const donationRoutes = express.Router();
 
 donationRoutes.get('/', getDonations);
-donationRoutes.get('/:id', getDonationById);
-donationRoutes.get('/:slug', getDonationBySlug);
+donationRoutes.get('/id/:id', getDonationById);
+donationRoutes.get('/slug/:slug', getDonationBySlug);
 
 
 module.exports = donationRoutes;

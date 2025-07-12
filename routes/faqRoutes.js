@@ -3,7 +3,7 @@ const { getFaqs, getFaqById, getFaqBySlug } = require('../controllers/faqControl
 const faqRoutes = express.Router();
 
 faqRoutes.get('/', getFaqs);
-faqRoutes.get('/:id', getFaqById);
-faqRoutes.get('/:slug', getFaqBySlug);
+faqRoutes.get('/id/:id', getFaqById);
+faqRoutes.get('/slug/:slug', getFaqBySlug);
 
 module.exports = faqRoutes;

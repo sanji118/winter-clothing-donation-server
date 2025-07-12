@@ -16,7 +16,7 @@ exports.getFaqById = async (req, res) => {
 exports.getFaqBySlug = async (req, res ) => {
   const {slug} = req.params;
   const collection = getCollection('faq');
-  const result = await collection.findOne({slug});
+  const result = await collection.find({campaignSlug: slug}).toArray();
   if (!result) {
     return res.status(404).json({ message: 'FAQs not found' });
   }
