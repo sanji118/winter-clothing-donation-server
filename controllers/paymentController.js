@@ -1,4 +1,5 @@
 const SSLCommerz = require('sslcommerz-lts');
+const { getCollection } = require('../utils/connectDB');
 
 
 const store_id = process.env.SSLC_STORE_ID;
@@ -40,3 +41,41 @@ exports.initiateSSLPayment = async (req, res) => {
         res.status(500).json({ message: 'Payment initiation failed' });
     }
 };
+
+
+exports.sslPaymentSuccess = async (req, res) => {
+    const { tranId } = req.body;
+
+    const {
+        campaignSlug,
+        cus_name,
+        cus_email,
+        cus_phone,
+        amount,
+        userId
+    } = req.body;
+
+    if (!tranId || !campaignSlug || !cus_name || !userId || !amount) {
+        return res.status(400).json({ message: 'Missing payment data' });
+    }
+
+    const donation = {
+        campaignSlug,
+        name: cus_name,
+        userId: cus_email,
+        amount: Number(amount),
+        method: 'SSLCommerz',
+        transactionId: tranId,
+        paymentstatus: 'success',
+        date: new Date()
+    };
+
+    try {
+        const collection = getCollection('donations');
+        await collection.insertOne(donation);
+        res.redirect(`${process.env.CLIENT_URL}/payment-success?tranId=${tranId}`);
+    } catch (error) {
+        console.error('Error saving donation: ', error);
+        res.status(500).json({ message: 'Failed to record doantion' });
+    }
+}
