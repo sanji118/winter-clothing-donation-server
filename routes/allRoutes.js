@@ -10,6 +10,7 @@ const galleryRoutes = require('./galleryRoutes');
 const faqRoutes = require('./faqRoutes');
 const userRoutes = require('./userRoutes');
 const authRoutes = require('./authRoutes');
+const paymentRoutes = require('./paymentRoutes');
 
 
 
@@ -27,6 +28,7 @@ router.use('/team', teamRoutes);
 router.use('/gallery', galleryRoutes);
 router.use('/user', userRoutes);
 router.use('/faq', faqRoutes);
+router.use('/initiate-ssl-payment', paymentRoutes);
 
 
 module.exports = router;

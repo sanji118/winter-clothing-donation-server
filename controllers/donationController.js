@@ -25,3 +25,36 @@ exports.getDonationBySlug = async (req, res ) => {
 
   res.send(result);
 }
+
+exports.postDonationData = async (req, res) => {
+  const {campaignSlug, name, userId, amount, date, method, transactionId} = req.body;
+
+  if(!campaignSlug || !name || !userId || !amount || !date || !method || !transactionId) {
+    return res.status(400).json({ message: 'Missing required fields.'})
+  }
+
+  const donationData = {
+    campaignSlug,
+    name,
+    userId,
+    amount : Number(amount),
+    date : new Date(),
+    method,
+    transactionId,
+    paymentStatus: 'success'
+  };
+
+
+  try {
+    const collection = getCollection('donations');
+    const result = await collection.insertOne(donationData);
+
+    res.status(201).json({
+      message: 'Donation Successfull',
+      insertedId: result.insertedId,
+    })
+  } catch (error) {
+    console.error('Donation insertion failed:', error)
+    res.status(500).json({ message: 'Internal server error' })
+  }
+}
