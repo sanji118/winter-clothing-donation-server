@@ -28,7 +28,7 @@ router.use('/team', teamRoutes);
 router.use('/gallery', galleryRoutes);
 router.use('/user', userRoutes);
 router.use('/faq', faqRoutes);
-router.use('/initiate-ssl-payment', paymentRoutes);
+router.use('/payment', paymentRoutes);
 
 
 module.exports = router;
