@@ -1,38 +1,45 @@
 const SSLCommerz = require('sslcommerz-lts');
 const { getCollection } = require('../utils/connectDB');
 
-
 const store_id = process.env.SSLC_STORE_ID;
 const store_password = process.env.SSLC_STORE_PASSWORD;
-
 const is_live = false;
 
-exports.initiateSSLPayment = async (req, res) => {
-    const { amount , name, email, phone, campaignSlug, userId } = req.body;
 
-    if( !amount || !name || !email || !phone || !campaignSlug || !userId) {
-        return res.status(400).json( { message: 'Missing required fields.' });
+exports.initiateSSLPayment = async (req, res) => {
+    const { amount, name, email, phone, campaignSlug , isAnonymous, userId} = req.body;
+
+    
+    if (!amount || !campaignSlug) {
+        return res.status(400).json({ message: 'Amount and Campaign are required.' });
+    }
+
+    if (!isAnonymous) {
+        if(!name || !email || !phone) {
+            return res.status(400).json({ message: 'Name, email and phone are required for non-anonymous donations.' })
+        }
     }
 
     const transactionId = `TXN-${Date.now()}`;
 
     const data = {
-        total_amount : Number(amount),
+        total_amount: Number(amount),
         currency: 'BDT',
         tran_id: transactionId,
-        success_url: `${process.env.BASE_URL}/ssl-payment-success?tranId=${transactionId}`,
-        fail_url: `${process.env.BASE_URL}/ssl-payment-fail`,
-        cancel_url: `${process.env.BASE_URL}/ssl-payment-cancel`,
-        ipn_url: `${process.env.BASE_URL}/ssl-ipn`,
+        success_url: `${process.env.BASE_URL}/payment/ssl-payment-success?tranId=${transactionId}`,
+        fail_url: `${process.env.BASE_URL}/payment/ssl-payment-fail`,
+        cancel_url: `${process.env.BASE_URL}/payment/ssl-payment-cancel`,
+        ipn_url: `${process.env.BASE_URL}/payment/ssl-ipn`,
         emi_option: 1,
         emi_max_inst_option: 12,
         emi_selected_inst: 0,
         mult_card_name: 'all',
         allowed_bin: 'all',
-        enableMobileBanking : true,
+        enableMobileBanking: true,
         enableInternetBanking: true,
         enableOtherCards: true,
 
+        // customer details
         cus_add1: 'N/A',
         cus_city: 'N/A',
         cus_postcode: '1000',
@@ -40,23 +47,48 @@ exports.initiateSSLPayment = async (req, res) => {
         ship_name: name,
         ship_add1: 'N/A',
         shipt_city: 'N/A',
-        value_a: campaignSlug,
-        value_b: userId,
-        value_c: 'donation',
         ship_postcode: '1000',
-        cus_name: name,
-        cus_email: email,
-        cus_phone: phone,
+        ship_country: 'Bangladesh',
+
+        cus_name: isAnonymous? 'Anonymous Donor' : name,
+        cus_email:isAnonymous? 'anonymous@cozykindeness.com' : email,
+        cus_phone: isAnonymous? '01XXXXXXXXX' : phone,
+
         product_name: 'Donation',
         product_category: 'Donation',
         product_profile: 'general',
-        ship_country: 'Bangladesh',
+
+        // Pass campaign and user info
+        value_a: campaignSlug,
+        value_b: isAnonymous ? 'true' : 'false',
+        value_c: 'donation',
+        value_d: userId
     };
+
+    try {
+        const donations = await getCollection('donations');
+        await donations.insertOne({
+            transactionId,
+            userId: userId || null,
+            isGuest: !userId,
+            campaignSlug,
+            name: isAnonymous ? 'Anonymous Donor' : name,
+            email: isAnonymous ? null : email,
+            phone: isAnonymous ? null : phone,
+            amount: Number(amount),
+            isAnonymous,
+            paymentstatus: 'initiated',
+            date: new Date(),
+        });
+    } catch (err) {
+        console.error('Error saving pending donation:', err);
+        return res.status(500).json({ message: 'Could not start donation.' });
+    }
 
     try {
         const sslcz = new SSLCommerz(store_id, store_password, is_live);
         const response = await sslcz.init(data);
-        res.json( { url: response.GatewayPageURL, transactionId});
+        res.json({ url: response.GatewayPageURL, transactionId });
     } catch (error) {
         console.error('SSLCommerz init error: ', error);
         res.status(500).json({ message: 'Payment initiation failed' });
@@ -65,63 +97,102 @@ exports.initiateSSLPayment = async (req, res) => {
 
 
 exports.sslPaymentSuccess = async (req, res) => {
-    const  tranId  = req.body.tran_id || req.query.tranId;
-    const {
-        campaignSlug,
-        cus_name,
-        cus_email,
-        amount,
-        value_b,
-        val_id,
-        bank_tran_id
-    } = req.body;
-    const donation = {
-        campaignSlug : campaignSlug || req.query.campaignSlug ,
-        name: cus_name,
-        email: cus_email,
-        userId: value_b || req.query.userId,
-        amount: Number(amount),
-        method: 'SSLCommerz',
-        transactionId: tranId,
-        paymentstatus: 'success',
-        date: new Date(),
-        val_id: val_id,
-        bank_tran_id: bank_tran_id
-    };
+    const tranId = req.query?.tranId;
 
+
+    console.log('success: ' , req.body);
+    const {
+        value_a: campaignSlug,
+        value_b,
+        value_d: userId,
+        amount,
+        val_id,
+        bank_tran_id,
+        card_issuer,
+        card_brand
+    } = req.body;
+
+    console.log('Query : ', req.query)
+    
+    
     try {
         const collection = await getCollection('donations');
-        await collection.insertOne(donation);
-        res.redirect(`${process.env.CLIENT_URL}/payment-success?tranId=${tranId}`);
 
+        const originalDonation = await collection.findOne({
+            transactionId: tranId
+        })
+
+        if (!originalDonation) {
+            throw new Error('Original donation record not found.')
+        }
+        const isAnonymous = value_b === 'true';
+        const method = card_brand === 'MOBILEBANKING' ? card_issuer : `${card_issuer} via ${card_brand} card`;
+
+        
+
+        const donation = {
+            campaignSlug,
+            name: isAnonymous ? 'Anonymous Donor' : originalDonation.name,
+            email: isAnonymous ? 'anonymous@cozykindness.com' : originalDonation.email,
+            phone: isAnonymous ? '01XXXXXXXXX' : originalDonation.phone,
+            userId: originalDonation.userId,
+            isGuest: !originalDonation.userId,
+            amount: Number(amount),
+            method: method,
+            transactionId: tranId,
+            paymentstatus: 'success',
+            date: new Date(),
+            bank_tran_id: bank_tran_id,
+            isAnonymous: isAnonymous,
+            verified: req.body?.status === 'VALID'
+        };
+        if (req.body?.status === 'VALID') {
+            donation.verified = true;
+            donation.verification_date = new Date();
+        }
+        console.log("FINAL donation : ", donation);
+
+
+        await collection.updateOne(
+            {transactionId: tranId},
+            {$set: donation}
+        );
+
+
+        res.redirect(`${process.env.CLIENT_URL}/payment/payment-success?tranId=${tranId}`);
     } catch (error) {
         console.error('Error saving donation: ', error);
-        res.redirect(`${process.env.CLIENT_URL}/payment-success?status=failed`);
+        res.redirect(`${process.env.CLIENT_URL}/payment/payment-success?status=failed`);
     }
-}
+};
+
 
 exports.sslIPN = async (req, res) => {
-    const { val_id , status, tran_id} = req.body;
+    const { val_id, status, tran_id , bank_tran_id} = req.body;
 
     try {
         const collection = await getCollection('donations');
+        if (bank_tran_id) {
+            updateData.bank_tran_id = bank_tran_id;
+        }
         await collection.updateOne(
-            { transactionId: tran_id},
+            { transactionId: tran_id },
             {
                 $set: {
                     val_id: val_id,
                     verified: status === 'VALID',
-                    verification_date : new Date(),
+                    verification_date: new Date(),
                     paymentstatus: status === 'VALID' ? 'verified' : 'failed'
                 }
             }
         );
-        res.status(200).json( { status: 'VALIDATED'});
+        res.status(200).json({ status: 'VALIDATED' });
     } catch (error) {
         console.error('IPN validation error: ', error);
-        res.status(500).json({ status: 'FAILED'})
+        res.status(500).json({ status: 'FAILED' });
     }
-}
+};
+
 
 exports.checkPaymentStatus = async (req, res) => {
     try {
@@ -131,16 +202,16 @@ exports.checkPaymentStatus = async (req, res) => {
         });
 
         if (!donation) {
-            return res.status(404).json({ error: 'Transaction not found.' })
-        };
+            return res.status(404).json({ error: 'Transaction not found.' });
+        }
+
         res.json({
             status: donation.paymentstatus,
             verified: donation.verified,
             transactionId: donation.transactionId,
             amount: donation.amount
         });
-
     } catch (error) {
-        res.status(500).json( { error: error.message })
+        res.status(500).json({ error: error.message });
     }
-}
+};

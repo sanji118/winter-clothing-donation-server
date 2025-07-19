@@ -5,6 +5,7 @@ const paymentRouter = express.Router();
 
 paymentRouter.post('/initiate-ssl-payment', initiateSSLPayment);
 paymentRouter.post('/ssl-payment-success', sslPaymentSuccess);
+paymentRouter.get('/ssl-payment-success', sslPaymentSuccess);
 paymentRouter.post('/ssl-payment-fail', (req, res) => {
   console.warn('SSL Payment failed:', req.body);
   res.redirect(`${process.env.CLIENT_URL}/payment-failed`);

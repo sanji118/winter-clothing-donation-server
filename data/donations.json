@@ -1,66 +1,114 @@
 [
   {
-    "userId": "donor@email.com",
     "campaignSlug": "cozy-drive-for-rangpur-elderly",
+    "name": "Abdul Rahman",
+    "email": "donor@email.com",
+    "phone": "+8801712345678",
+    "userId": "250618000000SfSOIQMshSgn7Ky",
+    "isGuest": false,
     "amount": 5000,
-    "date": "2025-06-18",
     "method": "bkash",
-    "transactionId": "BKA789XYZ456"
+    "transactionId": "BKA789XYZ456",
+    "paymentstatus": "success",
+    "date": "2025-06-18T00:00:00.000Z",
+    "bank_tran_id": "25061800000003jxCvKUEV1tTgo"
   },
   {
-    "userId": "partner@example.org",
     "campaignSlug": "warm-coats-for-dhakas-streets",
+    "name": "Nusrat Jahan",
+    "email": "partner@example.org",
+    "phone": "+8801812345678",
+    "userId": "250620000000SfSOIQMshSgn7Kz",
+    "isGuest": false,
     "amount": 20000,
-    "date": "2025-06-20",
     "method": "bank",
-    "transactionId": "BNK123ABC789"
+    "transactionId": "BNK123ABC789",
+    "paymentstatus": "success",
+    "date": "2025-06-20T00:00:00.000Z",
+    "bank_tran_id": "25062000000003jxCvKUEV1tTgp"
   },
   {
-    "userId": "anonymous",
     "campaignSlug": "bundle-joy-for-sylhet-kids",
+    "name": "Anonymous Donor",
+    "email": "",
+    "phone": null,
+    "userId": "250615000000SfSOIQMshSgn7K0",
+    "isGuest": true,
     "amount": 1000,
-    "date": "2025-06-15",
-    "method": "nagad",
-    "transactionId": "NGD456DEF123"
+    "method": "NAGAD-Nagad(for mobile banking)",
+    "transactionId": "NGD456DEF123",
+    "paymentstatus": "success",
+    "date": "2025-06-15T00:00:00.000Z",
+    "bank_tran_id": "25061500000003jxCvKUEV1tTgq"
   },
   {
-    "userId": "fatima@email.com",
     "campaignSlug": "rajshahi-blanket-drive",
+    "name": "Fatima Begum",
+    "email": "fatima@email.com",
+    "phone": "+8801912345678",
+    "userId": "250625000000SfSOIQMshSgn7K1",
+    "isGuest": false,
     "amount": 3000,
-    "date": "2025-06-25",
     "method": "bkash",
-    "transactionId": "BKA111YYY222"
+    "transactionId": "BKA111YYY222",
+    "paymentstatus": "success",
+    "date": "2025-06-25T00:00:00.000Z",
+    "bank_tran_id": "25062500000003jxCvKUEV1tTgr"
   },
   {
-    "userId": "arif@email.com",
     "campaignSlug": "chittagong-hill-tracts",
+    "name": "Arif Chowdhury",
+    "email": "arif@email.com",
+    "phone": "+8801512345678",
+    "userId": "250628000000SfSOIQMshSgn7K2",
+    "isGuest": false,
     "amount": 2500,
-    "date": "2025-06-28",
-    "method": "card",
-    "transactionId": "CRD333ZZZ444"
+    "method": "visa card via DBBL(for bank card)",
+    "transactionId": "CRD333ZZZ444",
+    "paymentstatus": "success",
+    "date": "2025-06-28T00:00:00.000Z",
+    "bank_tran_id": "25062800000003jxCvKUEV1tTgs"
   },
   {
-    "userId": "priya@email.com",
     "campaignSlug": "khulna-fishermen-relief",
+    "name": "Priya Das",
+    "email": "priya@email.com",
+    "phone": "+8801612345678",
+    "userId": "250701000000SfSOIQMshSgn7K3",
+    "isGuest": false,
     "amount": 7000,
-    "date": "2025-07-01",
-    "method": "nagad",
-    "transactionId": "NGD555XXX666"
+    "method": "NAGAD-Nagad(for mobile banking)",
+    "transactionId": "NGD555XXX666",
+    "paymentstatus": "success",
+    "date": "2025-07-01T00:00:00.000Z",
+    "bank_tran_id": "25070100000003jxCvKUEV1tTgt"
   },
   {
-    "userId": "samir@email.com",
     "campaignSlug": "mymensingh-winter-smiles",
+    "name": "Samir Ahmed",
+    "email": "samir@email.com",
+    "phone": "+8801312345678",
+    "userId": "250622000000SfSOIQMshSgn7K4",
+    "isGuest": false,
     "amount": 4000,
-    "date": "2025-06-22",
     "method": "bkash",
-    "transactionId": "BKA444AAA555"
+    "transactionId": "BKA444AAA555",
+    "paymentstatus": "success",
+    "date": "2025-06-22T00:00:00.000Z",
+    "bank_tran_id": "25062200000003jxCvKUEV1tTgu"
   },
   {
-    "userId": "corporate@company.org",
     "campaignSlug": "barisal-winter-warmth",
+    "name": "Corporate Donation",
+    "email": "corporate@company.org",
+    "phone": "+880212345678",
+    "userId": "250630000000SfSOIQMshSgn7K5",
+    "isGuest": false,
     "amount": 15000,
-    "date": "2025-06-30",
     "method": "bank",
-    "transactionId": "BNK666BBB777"
+    "transactionId": "BNK666BBB777",
+    "paymentstatus": "success",
+    "date": "2025-06-30T00:00:00.000Z",
+    "bank_tran_id": "25063000000003jxCvKUEV1tTgv"
   }
 ]
