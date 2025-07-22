@@ -26,7 +26,7 @@ router.use('/donations', donationRoutes);
 router.use('/announcements', announcementRoutes);
 router.use('/team', teamRoutes);
 router.use('/gallery', galleryRoutes);
-router.use('/user', userRoutes);
+router.use('/users', userRoutes);
 router.use('/faq', faqRoutes);
 router.use('/payment', paymentRoutes);
 

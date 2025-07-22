@@ -116,9 +116,11 @@ exports.sslPaymentSuccess = async (req, res) => {
     
     
     try {
-        const collection = await getCollection('donations');
+        const donationCollection = await getCollection('donations');
+        const campaignCollection = await getCollection('campaigns');
 
-        const originalDonation = await collection.findOne({
+
+        const originalDonation = await donationCollection.findOne({
             transactionId: tranId
         })
 
@@ -150,13 +152,21 @@ exports.sslPaymentSuccess = async (req, res) => {
             donation.verified = true;
             donation.verification_date = new Date();
         }
-        console.log("FINAL donation : ", donation);
 
 
-        await collection.updateOne(
+        await donationCollection.updateOne(
             {transactionId: tranId},
             {$set: donation}
         );
+
+
+        if (req.body?.status === 'VALID') {
+            await campaignCollection.updateOne(
+                {slug: campaignSlug},
+                {$inc: { raised: Number(amount)}}
+            )
+        }
+
 
 
         res.redirect(`${process.env.CLIENT_URL}/payment/payment-success?tranId=${tranId}`);
@@ -171,21 +181,39 @@ exports.sslIPN = async (req, res) => {
     const { val_id, status, tran_id , bank_tran_id} = req.body;
 
     try {
-        const collection = await getCollection('donations');
+        const donationCollection = await getCollection('donations');
+        const campaignCollection = await getCollection('campaigns');
+
+        const donation = await donationCollection.findOne({ transactionId: tran_id });
+
+        if (!donation) {
+            return res.status(404).json({ status: 'FAILED', message: 'Donation not found.'});
+        }
+
+        const updateData = {
+            val_id: val_id,
+            verified: status === 'VALID',
+            verification_date: new Date(),
+            paymentstatus: status === 'VALID' ? 'verified' : 'failed'
+        }
+
         if (bank_tran_id) {
             updateData.bank_tran_id = bank_tran_id;
         }
-        await collection.updateOne(
+
+
+        await donationCollection.updateOne(
             { transactionId: tran_id },
-            {
-                $set: {
-                    val_id: val_id,
-                    verified: status === 'VALID',
-                    verification_date: new Date(),
-                    paymentstatus: status === 'VALID' ? 'verified' : 'failed'
-                }
-            }
+            { $set : updateData}
         );
+
+        if (status === 'VALID') {
+            await campaignCollection.updateOne(
+                {slug: donation.campaignSlug},
+                {$inc: {raised: donation.amount}}
+            )
+        }
+        
         res.status(200).json({ status: 'VALIDATED' });
     } catch (error) {
         console.error('IPN validation error: ', error);
