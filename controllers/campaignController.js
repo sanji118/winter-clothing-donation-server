@@ -56,6 +56,34 @@ exports.postCommentToCampaign = async (req, res) => {
 }
 
 
+exports.createCampaign = async (req, res) => {
+  try {
+    const newCampaign = req.body;
+    const collection = await getCollection("campaigns");
+    const result = await collection.insertOne(newCampaign);
+    res.status(201).json({ success: true, insertedId: result.insertedId });
+  } catch (error) {
+    res.status(500).json({ message: "Failed to create campaign", error });
+  }
+};
+
+exports.updateCampaign = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const updates = req.body;
+    const collection = await getCollection("campaigns");
+    const result = await collection.updateOne(
+      { _id: new ObjectId(id) },
+      { $set: updates }
+    );
+    if (!result.matchedCount) return res.status(404).json({ message: "Campaign not found" });
+    res.json({ success: true });
+  } catch (error) {
+    res.status(500).json({ message: "Failed to update campaign", error });
+  }
+};
+
+
 exports.deleteCampaignData = async (req, res) => {
   try {
     const collection = await getCollection('campaigns');
