@@ -1,9 +1,10 @@
+const { ObjectId } = require("mongodb");
 const { getCollection } = require("../utils/connectDB");
 
 
 exports.createUser = async (req, res) => {
   const user = req.body;
-  const collection = getCollection('user');
+  const collection = getCollection('users');
 
   const existingUser = await collection.findOne({email: user.email });
   if(existingUser) {
@@ -25,14 +26,28 @@ exports.createUser = async (req, res) => {
 
 
 exports.getUsers = async (req, res) => {
-  const collection = getCollection('user');
+  const collection = getCollection('users');
   const data = await collection.find().toArray();
   res.send(data);
 };
 
 exports.getUserById = async (req, res) => {
   const id = req.params.id;
-  const collection = getCollection('user');
+  const collection = getCollection('users');
   const result = await collection.findOne({ _id: new ObjectId(id) });
   res.send(result);
 };
+
+
+exports.updateUserRole = async (req, res) => {
+  const {id} = req.params;
+  const { role } = req.body;
+  const collection = getCollection('users');
+
+  const result = await collection.updateOne(
+    {_id: new ObjectId(id)},
+    {$set: {role} }
+  )
+
+  res.send({ success: true, updated: result.modifiedCount })
+}
