@@ -1,8 +1,12 @@
 const express = require('express');
-const { getAnnouncements, getAnnouncementById } = require('../controllers/announcementController');
 const announcementRoutes = express.Router();
+const announcementController = require('../controllers/announcementController')
 
-announcementRoutes.get('/', getAnnouncements);
-announcementRoutes.get('/:id', getAnnouncementById);
+announcementRoutes.get("/:id", announcementController.getById);
+announcementRoutes.get("/", announcementController.getAll);
+announcementRoutes.post("/", announcementController.create);
+announcementRoutes.patch("/:id", announcementController.update);
+announcementRoutes.delete("/:id", announcementController.remove);
+
 
 module.exports = announcementRoutes;

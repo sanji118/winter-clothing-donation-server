@@ -1,26 +1,18 @@
 const { getCollection } = require("../utils/connectDB");
+const createCrudController = require('./crudController');
+const base = createCrudController("gallery");
 
-exports.getGallery = async (req, res) => {
-  const collection = getCollection('gallery');
-  const data = await collection.find().toArray();
-  res.send(data);
-};
+module.exports = {
+  ...base,
 
-exports.getGalleryItemById = async (req, res) => {
-  const id = req.params.id;
-  const collection = getCollection('gallery');
-  const result = await collection.findOne({ _id: new ObjectId(id) });
-  res.send(result);
-};
-
-
-exports.getGalleryBySlug = async (req, res ) => {
+  getGalleryBySlug : async (req, res ) => {
   const {slug} = req.params;
   const collection = getCollection('gallery');
   const result = await collection.find({campaignSlug: slug}).toArray();
   if (!result) {
-    return res.status(404).json({ message: 'Gallery not found' });
+    return res.status(404).json({ message: 'gallerys not found' });
   }
 
   res.send(result);
 }
+};

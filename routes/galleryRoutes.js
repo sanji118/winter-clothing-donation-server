@@ -1,9 +1,12 @@
 const express = require('express');
-const { getGallery, getGalleryItemById, getGalleryBySlug } = require('../controllers/galleryController');
+const galleryController = require('../controllers/galleryController');
 const galleryRoutes = express.Router();
 
-galleryRoutes.get('/', getGallery);
-galleryRoutes.get('/id/:id', getGalleryItemById);
-galleryRoutes.get('/slug/:slug', getGalleryBySlug);
+galleryRoutes.get("/", galleryController.getAll);
+galleryRoutes.get("/:id", galleryController.getById);
+galleryRoutes.get("/slug/:slug", galleryController.getGalleryBySlug);
+galleryRoutes.post("/", galleryController.create);
+galleryRoutes.patch("/:id", galleryController.update);
+galleryRoutes.delete("/:id", galleryController.remove);
 
 module.exports = galleryRoutes;

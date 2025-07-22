@@ -1,9 +1,13 @@
 const express = require('express');
-const { getBlogs, getBlogById, postCommentToBlog } = require('../controllers/blogController');
+const blogController = require('../controllers/blogController');
 const blogRoutes = express.Router();
 
-blogRoutes.get('/', getBlogs);
-blogRoutes.get('/:id', getBlogById);
-blogRoutes.post('/:id/comments', postCommentToBlog);
+blogRoutes.get("/", blogController.getAll);
+blogRoutes.get("/:id", blogController.getById);
+blogRoutes.post("/", blogController.create);
+blogRoutes.patch("/:id", blogController.update);
+blogRoutes.delete("/:id", blogController.remove);
+blogRoutes.post('/:id/comments', blogController.postCommentToBlog);
 
 module.exports = blogRoutes;
+

@@ -1,12 +1,16 @@
 const express = require('express');
-const { getDonations, getDonationById, getDonationBySlug, postDonationData, deleteDonationData } = require('../controllers/donationController');
+const donationController = require('../controllers/donationController');
+
 const donationRoutes = express.Router();
 
-donationRoutes.get('/', getDonations);
-donationRoutes.get('/id/:id', getDonationById);
-donationRoutes.get('/slug/:slug', getDonationBySlug);
-donationRoutes.post('/', postDonationData);
-donationRoutes.delete('/:id', deleteDonationData)
+// Basic CRUD
+donationRoutes.get('/', donationController.getAll);
+donationRoutes.get('/:id', donationController.getById);
+donationRoutes.post('/', donationController.create);  // custom postDonation
+donationRoutes.patch('/:id', donationController.update);
+donationRoutes.delete('/:id', donationController.remove);
 
+// Extra Route: Get donations by campaignSlug
+donationRoutes.get('/slug/:slug', donationController.getDonationBySlug);
 
 module.exports = donationRoutes;

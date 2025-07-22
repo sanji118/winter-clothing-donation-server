@@ -1,19 +1,11 @@
 const { getCollection } = require("../utils/connectDB");
+const createCrudController = require('./crudController');
+const base = createCrudController("faq");
 
-exports.getFaqs = async (req, res) => {
-  const collection = getCollection('faq');
-  const data = await collection.find().toArray();
-  res.send(data);
-};
+module.exports = {
+  ...base,
 
-exports.getFaqById = async (req, res) => {
-  const id = req.params.id;
-  const collection = getCollection('faq');
-  const result = await collection.findOne({ _id: new ObjectId(id) });
-  res.send(result);
-};
-
-exports.getFaqBySlug = async (req, res ) => {
+  getFaqBySlug : async (req, res ) => {
   const {slug} = req.params;
   const collection = getCollection('faq');
   const result = await collection.find({campaignSlug: slug}).toArray();
@@ -23,3 +15,6 @@ exports.getFaqBySlug = async (req, res ) => {
 
   res.send(result);
 }
+};
+
+

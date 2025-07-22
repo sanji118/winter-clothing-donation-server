@@ -1,9 +1,11 @@
 const express = require('express');
-const { getTestimonials, getTestimonialById, deleteTestimonialData } = require('../controllers/testimonialController');
+const testimonialController = require('../controllers/testimonialController');
 const testimonialRoutes = express.Router();
 
-testimonialRoutes.get('/', getTestimonials);
-testimonialRoutes.get('/:id', getTestimonialById);
-testimonialRoutes.delete('/:id', deleteTestimonialData)
+testimonialRoutes.get("/", testimonialController.getAll);
+testimonialRoutes.get("/:id", testimonialController.getById);
+testimonialRoutes.post("/", testimonialController.create);
+testimonialRoutes.patch("/:id", testimonialController.update);
+testimonialRoutes.delete("/:id", testimonialController.remove);
 
 module.exports = testimonialRoutes;

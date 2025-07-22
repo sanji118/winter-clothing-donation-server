@@ -1,9 +1,11 @@
 const express = require('express');
-const { getVolunteers, getVolunteerById, deleteVolunteerData } = require('../controllers/volunteerController');
+const volunteerController = require('../controllers/volunteerController');
 const volunteerRoutes = express.Router();
 
-volunteerRoutes.get('/', getVolunteers);
-volunteerRoutes.get('/:id', getVolunteerById);
-volunteerRoutes.delete('/:id', deleteVolunteerData)
+volunteerRoutes.get("/", volunteerController.getAll);
+volunteerRoutes.get("/:id", volunteerController.getById);
+volunteerRoutes.post("/", volunteerController.create);
+volunteerRoutes.patch("/:id", volunteerController.update);
+volunteerRoutes.delete("/:id", volunteerController.remove);
 
 module.exports = volunteerRoutes;

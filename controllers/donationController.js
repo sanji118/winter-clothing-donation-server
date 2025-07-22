@@ -1,72 +1,62 @@
+const createCrudController = require('./crudController');
 const { ObjectId } = require('mongodb');
 const { getCollection } = require('../utils/connectDB');
 
-exports.getDonations = async (req, res) => {
-  const collection = getCollection('donations');
-  const data = await collection.find().toArray();
-  res.send(data);
+// Base CRUD
+const base = createCrudController("donations");
+
+// Exporting all with custom overrides
+module.exports = {
+  ...base,
+
+  // Custom create (replaces default base.create)
+  create: async (req, res) => {
+    const { campaignSlug, name, userId, amount, date, method, transactionId } = req.body;
+
+    if (!campaignSlug || !name || !userId || !amount || !date || !method || !transactionId) {
+      return res.status(400).json({ message: 'Missing required fields.' });
+    }
+
+    const donationData = {
+      campaignSlug,
+      name,
+      userId,
+      amount: Number(amount),
+      date: new Date(),
+      method,
+      transactionId,
+      paymentStatus: 'success'
+    };
+
+    try {
+      const collection = await getCollection('donations');
+      const result = await collection.insertOne(donationData);
+
+      res.status(201).json({
+        message: 'Donation Successful',
+        insertedId: result.insertedId,
+      });
+    } catch (error) {
+      console.error('Donation insertion failed:', error);
+      res.status(500).json({ message: 'Internal server error', error });
+    }
+  },
+
+  // Custom endpoint to get donations by campaignSlug
+  getDonationBySlug: async (req, res) => {
+    try {
+      const { slug } = req.params;
+      const collection = await getCollection('donations');
+      const result = await collection.find({ campaignSlug: slug }).toArray();
+
+      if (!result || result.length === 0) {
+        return res.status(404).json({ message: 'No donations found for this campaign' });
+      }
+
+      res.json(result);
+    } catch (error) {
+      console.error('Error fetching donations by slug:', error);
+      res.status(500).json({ message: 'Failed to fetch donations', error });
+    }
+  },
 };
-
-exports.getDonationById = async (req, res) => {
-  const id = req.params.id;
-  const collection = getCollection('donations');
-  const result = await collection.findOne({ _id: new ObjectId(id) });
-  res.send(result);
-};
-
-
-exports.getDonationBySlug = async (req, res ) => {
-  const {slug} = req.params;
-  const collection = getCollection('donations');
-  const result = await collection.find({campaignSlug: slug}).toArray();
-  if (!result) {
-    return res.status(404).json({ message: 'Donation not found' });
-  }
-
-  res.send(result);
-}
-
-exports.postDonationData = async (req, res) => {
-  const {campaignSlug, name, userId, amount, date, method, transactionId} = req.body;
-
-  if(!campaignSlug || !name || !userId || !amount || !date || !method || !transactionId) {
-    return res.status(400).json({ message: 'Missing required fields.'})
-  }
-
-  const donationData = {
-    campaignSlug,
-    name,
-    userId,
-    amount : Number(amount),
-    date : new Date(),
-    method,
-    transactionId,
-    paymentStatus: 'success'
-  };
-
-
-  try {
-    const collection = getCollection('donations');
-    const result = await collection.insertOne(donationData);
-
-    res.status(201).json({
-      message: 'Donation Successfull',
-      insertedId: result.insertedId,
-    })
-  } catch (error) {
-    console.error('Donation insertion failed:', error)
-    res.status(500).json({ message: 'Internal server error' })
-  }
-}
-
-exports.deleteDonationData = async (req, res) => {
-  try {
-    const collection = await getCollection('donations');
-    const { id } = req.params;
-    const result = await collection.deleteOne({ _id: new ObjectId(id) });
-    if(!result.deletedCount) return res.status(404).json({message: 'Donation not found'});
-    res.json({success: true })
-  } catch (error) {
-    res.status(500).json({message: 'Failed to delete donation', error})
-  }
-}

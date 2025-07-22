@@ -1,9 +1,12 @@
 const express = require('express');
-const { getFaqs, getFaqById, getFaqBySlug } = require('../controllers/faqController');
+const faqController = require('../controllers/faqController');
 const faqRoutes = express.Router();
 
-faqRoutes.get('/', getFaqs);
-faqRoutes.get('/id/:id', getFaqById);
-faqRoutes.get('/slug/:slug', getFaqBySlug);
+faqRoutes.get("/", faqController.getAll);
+faqRoutes.get("/:id", faqController.getById);
+faqRoutes.post("/", faqController.create);
+faqRoutes.patch("/:id", faqController.update);
+faqRoutes.delete("/:id", faqController.remove);
+faqRoutes.get('/slug/:slug', faqController.getFaqBySlug);
 
 module.exports = faqRoutes;

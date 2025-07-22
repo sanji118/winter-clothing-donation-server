@@ -1,13 +1,15 @@
 const express = require('express');
-const { getCampaigns, getCampaignById, getCampaignBySlug, postCommentToCampaign, deleteCampaignData, createCampaign, updateCampaign } = require('../controllers/campaignController');
+const campaignController = require('../controllers/campaignController');
 const campaignRoutes = express.Router();
 
-campaignRoutes.get('/', getCampaigns);
-campaignRoutes.get('/id/:id', getCampaignById);
-campaignRoutes.get('/slug/:slug', getCampaignBySlug);
-campaignRoutes.post('/:id/comments', postCommentToCampaign);
-campaignRoutes.post("/", createCampaign);
-campaignRoutes.patch("/:id", updateCampaign);
-campaignRoutes.delete('/:id', deleteCampaignData)
+campaignRoutes.get("/", campaignController.getAll);
+campaignRoutes.get("/:id", campaignController.getById);
+campaignRoutes.post("/", campaignController.create);
+campaignRoutes.patch("/:id", campaignController.update);
+campaignRoutes.delete("/:id", campaignController.remove);
+
+// Extra routes
+campaignRoutes.get('/slug/:slug', campaignController.getCampaignBySlug);
+campaignRoutes.post('/:id/comments', campaignController.postCommentToCampaign);
 
 module.exports = campaignRoutes;
