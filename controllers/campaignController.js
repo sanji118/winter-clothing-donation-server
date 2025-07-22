@@ -54,3 +54,16 @@ exports.postCommentToCampaign = async (req, res) => {
         res.status(500).send({ success: false, message: "Failed to add comment", error });
     }
 }
+
+
+exports.deleteCampaignData = async (req, res) => {
+  try {
+    const collection = await getCollection('campaigns');
+    const { id } = req.params;
+    const result = await collection.deleteOne({ _id: new ObjectId(id) });
+    if(!result.deletedCount) return res.status(404).json({message: 'Campaign not found'});
+    res.json({success: true })
+  } catch (error) {
+    res.status(500).json({message: 'Failed to delete campaign', error})
+  }
+}

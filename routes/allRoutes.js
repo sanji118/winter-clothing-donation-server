@@ -17,7 +17,7 @@ const paymentRoutes = require('./paymentRoutes');
 const router = express.Router();
 
 
-router.use(authRoutes)
+router.use('/auth', authRoutes)
 router.use('/campaigns', campaignRoutes);
 router.use('/volunteers', volunteerRoutes);
 router.use('/testimonials', testimonialRoutes);
