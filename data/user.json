@@ -1,13 +1,5 @@
 [
   {
-    "name": "Admin User",
-    "email": "admin@warmhearts.org",
-    "photo": "https://i.postimg.cc/8C4XbZJ3/admin-avatar.png",
-    "role": "admin",
-    "joined": "2024-01-15",
-    "phone": "+8801712345678"
-  },
-  {
     "name": "Fatima Khan",
     "email": "fatima@email.com",
     "photo": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200",

@@ -11,6 +11,7 @@ const faqRoutes = require('./faqRoutes');
 const userRoutes = require('./userRoutes');
 const authRoutes = require('./authRoutes');
 const paymentRoutes = require('./paymentRoutes');
+const StatsRouter = require('./statsRoutes');
 
 
 
@@ -27,8 +28,9 @@ router.use('/announcements', announcementRoutes);
 router.use('/team', teamRoutes);
 router.use('/gallery', galleryRoutes);
 router.use('/users', userRoutes);
-router.use('/faq', faqRoutes);
+router.use('/faqs', faqRoutes);
 router.use('/payment', paymentRoutes);
+router.use('/stats', StatsRouter);
 
 
 module.exports = router;

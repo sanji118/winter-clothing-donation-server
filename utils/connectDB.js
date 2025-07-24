@@ -31,8 +31,8 @@ async function connectDB() {
             {name: 'announcements', data: announcements},
             {name: 'team', data: team},
             {name: 'gallery', data: gallery},
-            {name: 'user', data: user},
-            {name: 'faq', data: faq},
+            {name: 'users', data: user},
+            {name: 'faqs', data: faq},
 
         ];
 
